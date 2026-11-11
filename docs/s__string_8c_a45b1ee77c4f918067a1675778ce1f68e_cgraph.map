@@ -1,7 +1,8 @@
 <map id="s_appendchar" name="s_appendchar">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,31,108,57"/>
-<area shape="rect" id="Node000002" href="$s__string_01-_01_copia_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="168,5,236,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,32,155,26,150,28,109,38"/>
-<area shape="rect" id="Node000003" href="$s__string_01-_01_copia_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="156,56,248,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,50,143,58,138,59,108,56"/>
+<area shape="rect" id="Node000002" href="$s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="156,5,223,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,32,143,27,138,29,109,37"/>
+<area shape="rect" id="Node000003" href="$s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="271,31,363,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="108,41,256,41,255,47,108,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,23,258,32,253,32,223,28"/>
 </map>

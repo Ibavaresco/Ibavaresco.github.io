@@ -34,6 +34,7 @@ var s__string_8h =
     [ "static_s_string_tiny", "s__string_8h.html#a6c785105dd40a7bded2ea54b7d014375", null ],
     [ "static_s_string_tiny_array", "s__string_8h.html#ad04eeeb9621459fef50ba0de929cacd9", null ],
     [ "static_s_string_tiny_c", "s__string_8h.html#a52cedc584ef4325d230bd9ea56c55379", null ],
+    [ "s_string_t", "s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e", null ],
     [ "c_strcmp_s", "s__string_8h.html#ae8a705812038d53510491166bdd3ef2a", null ],
     [ "c_stricmp_s", "s__string_8h.html#acb9cb3055f279a8c49b610c4d9173b11", null ],
     [ "c_stristr_s", "s__string_8h.html#a9fd80e792edfa785be6096e7190bbfc8", null ],
@@ -128,5 +129,5 @@ var s__string_8h =
     [ "s_strupr_e", "s__string_8h.html#a67847b98e9095b168c69822a320fc713", null ],
     [ "s_strupr_l", "s__string_8h.html#a97870e6cb28c96abeabf7441a69c0e07", null ],
     [ "s_truncate", "s__string_8h.html#a42dfa782745a4d69055390d96b97b7ac", null ],
-    [ "b", "s__string_8h.html#a23f7c038ab3e245f0ebb33734297c9cb", null ]
+    [ "b", "s__string_8h.html#a6c3a5855ef902cf2f4fdd769cb291f5a", null ]
 ];
