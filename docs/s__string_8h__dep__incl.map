@@ -1,5 +1,7 @@
 <map id="s_string.h" name="s_string.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="Node000002" href="$s__string_8c.html" title=" " alt="" coords="5,80,84,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,46,47,80,42,79,43,50"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="91,5,169,32"/>
+<area shape="rect" id="Node000002" href="$s__string_01-_01_copia_8c.html" title=" " alt="" coords="5,80,130,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,43,80,82,76,78,107,45"/>
+<area shape="rect" id="Node000003" href="$s__string_8c.html" title=" " alt="" coords="154,80,232,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,42,185,80,179,79,150,46"/>
 </map>

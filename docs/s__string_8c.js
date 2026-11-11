@@ -1,6 +1,5 @@
 var s__string_8c =
 [
-    [ "__attribute__", "s__string_8c.html#a9a3e884da8f9877c0aa2e9b21b819974", null ],
     [ "c_strcmp_s", "s__string_8c.html#ae8a705812038d53510491166bdd3ef2a", null ],
     [ "c_stricmp_s", "s__string_8c.html#acb9cb3055f279a8c49b610c4d9173b11", null ],
     [ "c_stristr_s", "s__string_8c.html#a4b867b595553268242d22a5a48e0a177", null ],
@@ -39,6 +38,7 @@ var s__string_8c =
     [ "s_rtrim_s", "s__string_8c.html#a09eba09a33acdf448266d91a29e51b9b", null ],
     [ "s_setcharat", "s__string_8c.html#a75248a1d297d4e0272181fc1ae1adf6f", null ],
     [ "s_sprintf", "s__string_8c.html#ad468f1874e80c45cd6f48cc408c769de", null ],
+    [ "s_sprintf_c", "s__string_8c.html#af97bf3129b6e010581aff643ac004b9d", null ],
     [ "s_strcat", "s__string_8c.html#a2e618f54262f2b39de2e9719e07c4708", null ],
     [ "s_strcat_c", "s__string_8c.html#a3517077f0ff17bd04c01c8199dc0e136", null ],
     [ "s_strchr", "s__string_8c.html#a0695e8a61367fde13f79ce35d4631284", null ],

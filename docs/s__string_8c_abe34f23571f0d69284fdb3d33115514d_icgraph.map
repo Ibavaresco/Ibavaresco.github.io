@@ -1,7 +1,14 @@
 <map id="s_strldup_c" name="s_strldup_c">
-<area shape="rect" id="Node000001" title="Creates in the heap a dynamically allocated s_string object capable of holding at most the minimum be..." alt="" coords="147,31,235,57"/>
-<area shape="rect" id="Node000002" href="$s__string_8c.html#af6e5ff03a8b5abc0f96670d261279496" title="Finds the next token in the s_string str delimited by characters from the s_string delim,..." alt="" coords="9,5,95,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,34,96,29,95,24,134,32"/>
-<area shape="rect" id="Node000003" href="$s__string_8c.html#ab2e911d5e0c85efdfe520b92bcf1d677" title="Finds the next token in the s_string str delimited by characters from the C&#45;string delim,..." alt="" coords="5,56,99,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,55,100,63,99,58,134,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="277,80,365,107"/>
+<area shape="rect" id="Node000002" href="$_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="140,29,224,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,75,221,59,221,54,271,74"/>
+<area shape="rect" id="Node000003" href="$s__string_8c.html#af6e5ff03a8b5abc0f96670d261279496" title=" " alt="" coords="139,80,226,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="258,94,226,96,225,91,264,93"/>
+<area shape="rect" id="Node000005" href="$s__string_8c.html#ab2e911d5e0c85efdfe520b92bcf1d677" title=" " alt="" coords="136,131,229,157"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="271,112,222,133,220,128,266,113"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="204,14,197,10,182,8,169,10,161,14,160,20,163,29,158,28,154,21,157,11,167,5,182,3,199,5,209,14"/>
+<area shape="rect" id="Node000004" href="$_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,105,88,132"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="122,105,89,114,88,108,126,103"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="68,91,61,86,46,84,33,86,26,90,24,96,28,105,22,105,18,97,21,87,31,81,47,79,63,81,73,90"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="118,133,88,129,88,124,123,132"/>
 </map>
