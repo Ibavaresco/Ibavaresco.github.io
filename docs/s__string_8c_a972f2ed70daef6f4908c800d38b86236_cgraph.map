@@ -1,10 +1,10 @@
 <map id="s_strdup" name="s_strdup">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,766,77,793"/>
-<area shape="rect" id="Node000002" href="$_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="129,741,219,767"/>
+<area shape="rect" id="Node000002" href="$_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="129,741,219,767"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,771,115,763,112,767,79,774"/>
 <area shape="rect" id="Node000005" href="$s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="569,741,636,767"/>
 <area shape="poly" id="edge89_Node000001_Node000005" title=" " alt="" coords="40,765,48,656,59,572,78,476,107,374,147,272,172,222,200,175,233,131,269,91,330,39,362,20,394,8,426,3,458,6,490,19,523,43,532,57,541,81,557,152,570,246,581,354,595,571,603,726,597,724,590,572,575,355,565,247,552,153,536,83,528,60,519,46,488,24,457,12,426,8,395,13,364,25,334,43,273,94,237,134,205,178,176,225,152,274,112,375,83,477,64,573,53,657,45,766"/>
-<area shape="rect" id="Node000033" href="$_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="125,866,223,893"/>
+<area shape="rect" id="Node000033" href="$_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="125,866,223,893"/>
 <area shape="poly" id="edge83_Node000001_Node000033" title=" " alt="" coords="60,791,145,855,140,857,61,796"/>
 <area shape="rect" id="Node000034" href="$s__string_8c.html#a11dca010d32f6458b0bd2ce8af4f1ab2" title=" " alt="" coords="285,1526,356,1553"/>
 <area shape="poly" id="edge85_Node000001_Node000034" title=" " alt="" coords="76,776,113,778,153,785,193,801,210,813,225,828,241,854,252,887,259,926,262,969,261,1065,254,1168,247,1273,245,1370,252,1452,260,1486,273,1512,276,1518,271,1516,269,1515,255,1487,246,1453,239,1370,242,1272,249,1168,256,1064,257,969,253,926,247,889,236,857,221,831,207,817,190,806,152,790,112,783,79,780"/>

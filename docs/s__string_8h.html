@@ -383,6 +383,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4dc6d94e8df5e707de5817a4543e1e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims characters from the left and the right, and removes duplicated characters from the middle of an s_string.  <br /></td></tr>
 <tr class="memitem:a6eb4b489c8f7f8fd8e5b8674c1ebfeea" id="r_a6eb4b489c8f7f8fd8e5b8674c1ebfeea"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a6eb4b489c8f7f8fd8e5b8674c1ebfeea">s_alltrim_ce</a> (<a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, ssize_t end, const char *restrict delim, int replacement)</td></tr>
 <tr class="memdesc:a6eb4b489c8f7f8fd8e5b8674c1ebfeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims characters from the left and the right, and removes duplicated characters from the middle of an s_string.  <br /></td></tr>
+<tr class="memitem:a3020a24718fb5faa58b454255c57eeb3" id="r_a3020a24718fb5faa58b454255c57eeb3"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a3020a24718fb5faa58b454255c57eeb3">s_remove_se</a> (<a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, ssize_t end, const <a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict delim, ssize_t delimstart)</td></tr>
+<tr class="memdesc:a3020a24718fb5faa58b454255c57eeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes characters of an s_string.  <br /></td></tr>
+<tr class="memitem:a3ae449da69dd9b02414c270af55a0f5c" id="r_a3ae449da69dd9b02414c270af55a0f5c"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a3ae449da69dd9b02414c270af55a0f5c">s_remove_ce</a> (<a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, ssize_t end, const char *restrict delim)</td></tr>
+<tr class="memdesc:a3ae449da69dd9b02414c270af55a0f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes characters of an s_string.  <br /></td></tr>
 <tr class="memitem:af374341f1c356f4542dab2add5843a07" id="r_af374341f1c356f4542dab2add5843a07"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#af374341f1c356f4542dab2add5843a07">s_insert_e</a> (<a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict dst, ssize_t dststart, const <a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict src, ssize_t srcstart, ssize_t srcend, int filler)</td></tr>
 <tr class="memdesc:af374341f1c356f4542dab2add5843a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a sequence of characters from one s_string and inserts it in another s_string.  <br /></td></tr>
 <tr class="memitem:a61a5665aab837f0f132754ad8a535b3d" id="r_a61a5665aab837f0f132754ad8a535b3d"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a61a5665aab837f0f132754ad8a535b3d">s_insert_l</a> (<a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict dst, ssize_t dststart, const <a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict src, ssize_t srcstart, ssize_t len, int filler)</td></tr>
@@ -435,10 +439,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t _##name##_buffer[<a class="code hl_function" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a>(maxsize)];                   \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t _##name##_buffer[<a class="code hl_function" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a>(maxsize)];                   \</div>
 <div class="line"><a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> * <span class="keyword">const</span> name = (<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>*)_##name##_buffer;                \</div>
 <div class="line">_s_string_init(name,maxsize,1)</div>
-<div class="ttc" id="a_list_of_functions_8h_html_a736cd54729381f541f72a4e30ae8de07"><div class="ttname"><a href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a></div><div class="ttdeci">ssize_t _s_calcsize(ssize_t len)</div></div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_a736cd54729381f541f72a4e30ae8de07"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a></div><div class="ttdeci">ssize_t _s_calcsize(ssize_t len)</div></div>
 <div class="ttc" id="as__string_8h_html_a43f20bc95cdaf8be6e4414d25763819e"><div class="ttname"><a href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a></div><div class="ttdeci">struct s_string s_string_t</div><div class="ttdoc">A data type to represent the s_string objects. It is an opaque data type, so the user&#39;s code cannot a...</div><div class="ttdef"><b>Definition</b> s_string.h:36</div></div>
 </div><!-- fragment -->
 <p>Creates on the stack an s_string automatic local variable capable of holding up to <em class="arg">'maxsize'</em> characters. Can only be used inside a function. The resulting s_string starts empty. </p>
@@ -475,7 +479,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t _##name##_buffer[(count)*<a class="code hl_function" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a>(maxsize)];           \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t _##name##_buffer[(count)*<a class="code hl_function" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a>(maxsize)];           \</div>
 <div class="line"><a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> * <span class="keyword">const</span> name[(count)];                                       \</div>
 <div class="line">_s_string_array_init(name,(uint8_t*)_##name##_buffer,count,maxsize,1)</div>
 </div><!-- fragment -->
@@ -514,7 +518,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t _##name##_buffer[<a class="code hl_function" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a>(maxsize)];                   \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> uint8_t _##name##_buffer[<a class="code hl_function" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07">_s_calcsize</a>(maxsize)];                   \</div>
 <div class="line"><a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> * <span class="keyword">const</span> name = (<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>*)_##name##_buffer;                \</div>
 <div class="line">_s_string_init(name,maxsize,1);                                         \</div>
 <div class="line">s_strcpy_c(name,src)</div>
@@ -580,8 +584,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>{*(<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>**)&amp;(s).name = (<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>*)(s)._##name##_buffer;<a class="code hl_function" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab">_s_string_init</a>((s).name,<span class="keyword">sizeof</span>((s)._##name##_buffer)-1-2-2-1,1);}<span class="keywordflow">while</span>(0)</div>
-<div class="ttc" id="a_list_of_functions_8h_html_a2fcebf38007b0529e6f065e2a99a74ab"><div class="ttname"><a href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab">_s_string_init</a></div><div class="ttdeci">void _s_string_init(s_string_t *restrict str, ssize_t len, int area)</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>{*(<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>**)&amp;(s).name = (<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>*)(s)._##name##_buffer;<a class="code hl_function" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab">_s_string_init</a>((s).name,<span class="keyword">sizeof</span>((s)._##name##_buffer)-1-2-2-1,1);}<span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_a2fcebf38007b0529e6f065e2a99a74ab"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab">_s_string_init</a></div><div class="ttdeci">void _s_string_init(s_string_t *restrict str, ssize_t len, int area)</div></div>
 </div><!-- fragment -->
 <p>Initialize an s_string field in a structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -617,8 +621,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>{*(<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>**)&amp;(s).name = (<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>*)(s)._##name##_buffer;<a class="code hl_function" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab">_s_string_init</a>((s).name,<span class="keyword">sizeof</span>((s)._##name##_buffer)-1-2-2-1,1);<a class="code hl_function" href="_list_of_functions_8h.html#ad6674b3b7d5474402da49e3c160cf7e1">s_strcpy_c</a>((s).name,src);}<span class="keywordflow">while</span>(0)</div>
-<div class="ttc" id="a_list_of_functions_8h_html_ad6674b3b7d5474402da49e3c160cf7e1"><div class="ttname"><a href="_list_of_functions_8h.html#ad6674b3b7d5474402da49e3c160cf7e1">s_strcpy_c</a></div><div class="ttdeci">ssize_t s_strcpy_c(s_string_t *restrict dst, const char *restrict src)</div><div class="ttdef"><b>Definition</b> s_string.c:863</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>{*(<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>**)&amp;(s).name = (<a class="code hl_typedef" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a>*)(s)._##name##_buffer;<a class="code hl_function" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab">_s_string_init</a>((s).name,<span class="keyword">sizeof</span>((s)._##name##_buffer)-1-2-2-1,1);<a class="code hl_function" href="_list_of_functions_8h_8txt.html#ad6674b3b7d5474402da49e3c160cf7e1">s_strcpy_c</a>((s).name,src);}<span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_ad6674b3b7d5474402da49e3c160cf7e1"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#ad6674b3b7d5474402da49e3c160cf7e1">s_strcpy_c</a></div><div class="ttdeci">ssize_t s_strcpy_c(s_string_t *restrict dst, const char *restrict src)</div><div class="ttdef"><b>Definition</b> s_string.c:1034</div></div>
 </div><!-- fragment -->
 <p>Initialize an s_string field in a structure with an initial value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -975,8 +979,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h.html#a6eb4b489c8f7f8fd8e5b8674c1ebfeea">s_alltrim_ce</a>( (s), 0, -1, NULL, <span class="charliteral">&#39; &#39;</span> );</div>
-<div class="ttc" id="a_list_of_functions_8h_html_a6eb4b489c8f7f8fd8e5b8674c1ebfeea"><div class="ttname"><a href="_list_of_functions_8h.html#a6eb4b489c8f7f8fd8e5b8674c1ebfeea">s_alltrim_ce</a></div><div class="ttdeci">ssize_t s_alltrim_ce(s_string_t *restrict str, ssize_t start, ssize_t end, const char *restrict delim, int replacement)</div><div class="ttdef"><b>Definition</b> s_string.c:4311</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h_8txt.html#a6eb4b489c8f7f8fd8e5b8674c1ebfeea">s_alltrim_ce</a>( (s), 0, -1, NULL, <span class="charliteral">&#39; &#39;</span> );</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_a6eb4b489c8f7f8fd8e5b8674c1ebfeea"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#a6eb4b489c8f7f8fd8e5b8674c1ebfeea">s_alltrim_ce</a></div><div class="ttdeci">ssize_t s_alltrim_ce(s_string_t *restrict str, ssize_t start, ssize_t end, const char *restrict delim, int replacement)</div><div class="ttdef"><b>Definition</b> s_string.c:4891</div></div>
 </div><!-- fragment -->
 <p>Removes all spaces from the left and the right, and duplicated spaces from the middle of an s_string. </p>
 <p>Removes all spaces from the left and the right, and duplicated spaces from the middle of s_string <em class="arg">'str'</em>. The characters to be deleted are those recognized by the function <em class="arg">'isspace'</em>.</p>
@@ -1008,8 +1012,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h.html#a4dc6d94e8df5e707de5817a4543e1e60">s_alltrim_se</a>( (s), 0, -1, (d), <span class="charliteral">&#39;\0&#39;</span> );</div>
-<div class="ttc" id="a_list_of_functions_8h_html_a4dc6d94e8df5e707de5817a4543e1e60"><div class="ttname"><a href="_list_of_functions_8h.html#a4dc6d94e8df5e707de5817a4543e1e60">s_alltrim_se</a></div><div class="ttdeci">ssize_t s_alltrim_se(s_string_t *restrict str, ssize_t start, ssize_t end, const s_string_t *restrict delim, ssize_t delimstart, int replacement)</div><div class="ttdef"><b>Definition</b> s_string.c:4205</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h_8txt.html#a4dc6d94e8df5e707de5817a4543e1e60">s_alltrim_se</a>( (s), 0, -1, (d), <span class="charliteral">&#39;\0&#39;</span> );</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_a4dc6d94e8df5e707de5817a4543e1e60"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#a4dc6d94e8df5e707de5817a4543e1e60">s_alltrim_se</a></div><div class="ttdeci">ssize_t s_alltrim_se(s_string_t *restrict str, ssize_t start, ssize_t end, const s_string_t *restrict delim, ssize_t delimstart, int replacement)</div><div class="ttdef"><b>Definition</b> s_string.c:4770</div></div>
 </div><!-- fragment -->
 <p>Trims characters from the left and the right, and removes duplicated characters from the middle of an s_string. </p>
 <p>Deletes contiguous sequences of characters from the s_string <em class="arg">'str'</em> that belong to the set defined by C-string <em class="arg">'delim'</em>, starting from the beginning towards the right and starting from the end towards the left, and also replaces sequences of multiple characters in the middle with one single character. The character to be used in the replacement is the leftmost character of the sequence.</p>
@@ -1042,7 +1046,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h.html#a4dc6d94e8df5e707de5817a4543e1e60">s_alltrim_se</a>( (s), 0, -1, (d), 0, <span class="charliteral">&#39;\0&#39;</span> );</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h_8txt.html#a4dc6d94e8df5e707de5817a4543e1e60">s_alltrim_se</a>( (s), 0, -1, (d), 0, <span class="charliteral">&#39;\0&#39;</span> );</div>
 </div><!-- fragment -->
 <p>Trims characters from the left and the right, and removes duplicated characters from the middle of an s_string. </p>
 <p>Deletes contiguous sequences of characters from the s_string <em class="arg">'str'</em> that belong to the set defined by s_string <em class="arg">'delim'</em>, starting from the beginning towards the right and starting from the end towards the left, and also replaces sequences of multiple characters in the middle with one single character. The character to be used in the replacement is the leftmost character of the sequence.</p>
@@ -1071,8 +1075,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h.html#af71a829cd1c65e705fe300744fcd4ab4">s_ltrim_c</a>( (str), 0, NULL )</div>
-<div class="ttc" id="a_list_of_functions_8h_html_af71a829cd1c65e705fe300744fcd4ab4"><div class="ttname"><a href="_list_of_functions_8h.html#af71a829cd1c65e705fe300744fcd4ab4">s_ltrim_c</a></div><div class="ttdeci">ssize_t s_ltrim_c(s_string_t *restrict str, ssize_t start, const char *restrict delim)</div><div class="ttdef"><b>Definition</b> s_string.c:4023</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h_8txt.html#af71a829cd1c65e705fe300744fcd4ab4">s_ltrim_c</a>( (str), 0, NULL )</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_af71a829cd1c65e705fe300744fcd4ab4"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#af71a829cd1c65e705fe300744fcd4ab4">s_ltrim_c</a></div><div class="ttdeci">ssize_t s_ltrim_c(s_string_t *restrict str, ssize_t start, const char *restrict delim)</div><div class="ttdef"><b>Definition</b> s_string.c:4543</div></div>
 </div><!-- fragment -->
 <p>Trims spaces from the beginning of an s_string. </p>
 <pre class="fragment">           Deletes a contiguous sequence of characters from the left of
@@ -1102,8 +1106,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h.html#a6c50d2a3b143fe2a4f5a04bc31648337">s_rtrim_c</a>( (str), -1, NULL )</div>
-<div class="ttc" id="a_list_of_functions_8h_html_a6c50d2a3b143fe2a4f5a04bc31648337"><div class="ttname"><a href="_list_of_functions_8h.html#a6c50d2a3b143fe2a4f5a04bc31648337">s_rtrim_c</a></div><div class="ttdeci">ssize_t s_rtrim_c(s_string_t *restrict str, ssize_t start, const char *restrict delim)</div><div class="ttdef"><b>Definition</b> s_string.c:4151</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h_8txt.html#a6c50d2a3b143fe2a4f5a04bc31648337">s_rtrim_c</a>( (str), -1, NULL )</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_a6c50d2a3b143fe2a4f5a04bc31648337"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#a6c50d2a3b143fe2a4f5a04bc31648337">s_rtrim_c</a></div><div class="ttdeci">ssize_t s_rtrim_c(s_string_t *restrict str, ssize_t start, const char *restrict delim)</div><div class="ttdef"><b>Definition</b> s_string.c:4701</div></div>
 </div><!-- fragment -->
 <p>Trims spaces from the end of an s_string. </p>
 <pre class="fragment">           Deletes a contiguous sequence of characters from the right of
@@ -1133,8 +1137,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h.html#a03a5844ce71b47f4937105acdf7f64cf">s_strlwr_e</a>( (s), 0, -1 )</div>
-<div class="ttc" id="a_list_of_functions_8h_html_a03a5844ce71b47f4937105acdf7f64cf"><div class="ttname"><a href="_list_of_functions_8h.html#a03a5844ce71b47f4937105acdf7f64cf">s_strlwr_e</a></div><div class="ttdeci">ssize_t s_strlwr_e(s_string_t *restrict str, ssize_t start, ssize_t end)</div><div class="ttdef"><b>Definition</b> s_string.c:3779</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h_8txt.html#a03a5844ce71b47f4937105acdf7f64cf">s_strlwr_e</a>( (s), 0, -1 )</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_a03a5844ce71b47f4937105acdf7f64cf"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#a03a5844ce71b47f4937105acdf7f64cf">s_strlwr_e</a></div><div class="ttdeci">ssize_t s_strlwr_e(s_string_t *restrict str, ssize_t start, ssize_t end)</div><div class="ttdef"><b>Definition</b> s_string.c:4265</div></div>
 </div><!-- fragment -->
 <p>Converts all uppercase letters from an s_string to lowercase. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1161,8 +1165,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h.html#a67847b98e9095b168c69822a320fc713">s_strupr_e</a>( (s), 0, -1 )</div>
-<div class="ttc" id="a_list_of_functions_8h_html_a67847b98e9095b168c69822a320fc713"><div class="ttname"><a href="_list_of_functions_8h.html#a67847b98e9095b168c69822a320fc713">s_strupr_e</a></div><div class="ttdeci">ssize_t s_strupr_e(s_string_t *restrict str, ssize_t start, ssize_t end)</div><div class="ttdef"><b>Definition</b> s_string.c:3864</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_list_of_functions_8h_8txt.html#a67847b98e9095b168c69822a320fc713">s_strupr_e</a>( (s), 0, -1 )</div>
+<div class="ttc" id="a_list_of_functions_8h_8txt_html_a67847b98e9095b168c69822a320fc713"><div class="ttname"><a href="_list_of_functions_8h_8txt.html#a67847b98e9095b168c69822a320fc713">s_strupr_e</a></div><div class="ttdeci">ssize_t s_strupr_e(s_string_t *restrict str, ssize_t start, ssize_t end)</div><div class="ttdef"><b>Definition</b> s_string.c:4350</div></div>
 </div><!-- fragment -->
 <p>Converts all lowercase letters from an s_string to uppercase. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1910,11 +1914,24 @@ Variables</h2></td></tr>
     <tr><td class="paramname">start</td><td>The index in <em class="arg">'str'</em> to start the deletion at the left.</td></tr>
     <tr><td class="paramname">end</td><td>The index in <em class="arg">'str'</em> to start the deletion at the right.</td></tr>
     <tr><td class="paramname">delim</td><td>C-string with the set of characters that are to be deleted from <em class="arg">'str'</em>. If <em class="arg">'delim'</em> is NULL, the characters to be deleted are those recognized by the function <em class="arg">'isspace'</em>.</td></tr>
+    <tr><td class="paramname">replacement</td><td>Character to replace contiguous sequences of characters that belong to the set defined by <em class="arg">'delim'</em>. If <em class="arg">'replacement'</em> is '\0', then the first character of each sequence will be kept, otherwise <em class="arg">'replacement'</em> will be used.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error.</dd></dl>
+<pre>
+s_alltrim
+--------------------------------------------------------------------------------
+delim:          x..z
+replacement:    '#'
 
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    s  = start
+str:    | A | cs* | B | cs* | C | cs* | D |    =&gt;  | A | B |#| C | D |    e  = end
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    cs*= characters from delim
+            s                         e
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a4dc6d94e8df5e707de5817a4543e1e60" name="a4dc6d94e8df5e707de5817a4543e1e60"></a>
@@ -1965,11 +1982,24 @@ Variables</h2></td></tr>
     <tr><td class="paramname">end</td><td>The index in <em class="arg">'str'</em> to start the deletion at the right.</td></tr>
     <tr><td class="paramname">delim</td><td>s_string with the set of characters that are to be deleted from <em class="arg">'str'</em>. If <em class="arg">'delim'</em> is NULL, the characters to be deleted are those recognized by the function <em class="arg">'isspace'</em>.</td></tr>
     <tr><td class="paramname">delimstart</td><td>Index of the first character of <em class="arg">'delim'</em> that belongs to the set.</td></tr>
+    <tr><td class="paramname">replacement</td><td>Character to replace contiguous sequences of characters that belong to the set defined by <em class="arg">'delim'</em>. If <em class="arg">'replacement'</em> is '\0', then the first character of each sequence will be kept, otherwise <em class="arg">'replacement'</em> will be used.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error.</dd></dl>
+<pre>
+s_alltrim_se
+--------------------------------------------------------------------------------
+delim:          x..z
+replacement:    '#'
 
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    s  = start
+str:    | A | cs* | B | cs* | C | cs* | D |    =&gt;  | A | B |#| C | D |    e  = end
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    cs*= characters from delim
+            s                         e
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a45b1ee77c4f918067a1675778ce1f68e" name="a45b1ee77c4f918067a1675778ce1f68e"></a>
@@ -2099,7 +2129,16 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>How many characters were removed or a negative value if an error occurred.</dd></dl>
-<p>s_delete_e Tested OK!!! </p>
+<pre>
+s_delete_e
+--------------------------------------------------------------------------------
+            ss  se               ss               ss = strstart
+        +---+---+---+        +---+---+            se = strend
+str:    | A | B | C |    =&gt;  | A | C |
+        +---+---+---+        +---+---+
+
+--------------------------------------------------------------------------------
+</pre><p> s_delete_e Tested OK!!! </p>
 
 </div>
 </div>
@@ -2137,7 +2176,17 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>How many characters were removed or a negative value if an error occurred.</dd></dl>
-<p>s_delete_l Tested OK!!! </p>
+<pre>
+s_delete_l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = strstart
+        +---+-------+---+        +---+---+
+str:    | A |   B   | C |    =&gt;  | A | C |
+        +---+-------+---+        +---+---+
+            +--len--+
+
+--------------------------------------------------------------------------------
+</pre><p> s_delete_l Tested OK!!! </p>
 
 </div>
 </div>
@@ -2180,8 +2229,21 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error.</dd></dl>
+<pre>
+s_extract_e
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a33a80e3ac73ee71053d0073e9710d844" name="a33a80e3ac73ee71053d0073e9710d844"></a>
@@ -2223,8 +2285,21 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error.</dd></dl>
+<pre>
+s_extract_ec
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="aabf07408a87c64ddf49bcac8bc118260" name="aabf07408a87c64ddf49bcac8bc118260"></a>
@@ -2266,8 +2341,23 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error.</dd></dl>
+<pre>
+s_extract_l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a799754db581681229535d434fd59e8fa" name="a799754db581681229535d434fd59e8fa"></a>
@@ -2303,8 +2393,21 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the s_string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the s_string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore.</dd></dl>
+<pre>
+s_extract_?e
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="aac58867e38c4fc2b9b1a2c238cd3d4cf" name="aac58867e38c4fc2b9b1a2c238cd3d4cf"></a>
@@ -2340,8 +2443,21 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the C-string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the C-string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore.</dd></dl>
+<pre>
+s_extract_?ec
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a0ca71ab838165620559a2b7dc475a843" name="a0ca71ab838165620559a2b7dc475a843"></a>
@@ -2377,8 +2493,24 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the s_string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the s_string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore.</dd></dl>
+<pre>
+s_extract_?l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
 
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a3c3f10c06cb319c048af775f2539f579" name="a3c3f10c06cb319c048af775f2539f579"></a>
@@ -2414,8 +2546,24 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the C-string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new, dynamically allocated s_string object that contains a copy of the character sequence from the C-string <em class="arg">'src'</em>. The new object must be freed with 'free' when not in use anymore.</dd></dl>
+<pre>
+s_extract_?l?
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
 
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="ab8715ae6ed12c5fd8395de96ee330cdd" name="ab8715ae6ed12c5fd8395de96ee330cdd"></a>
@@ -2460,7 +2608,19 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters that were changed in <em class="arg">'dst'</em> or a negative value in case of error.</dd></dl>
-<p>s_fill_l tested OK! </p>
+<pre>
+s_fill_l
+--------------------------------------------------------------------------------
+src:    'c'
+
+            +----len----+       =&gt;           +----len----+
+        +---+-----------+---+            +---+----   ----+---+    ds = dststart
+dst:    | A |     B     | D |            | A |cccc...cccc| D |
+        +---+-----------+---+            +---+----   ----+---+
+            ds                               ds
+
+--------------------------------------------------------------------------------
+</pre><p> s_fill_l tested OK! </p>
 
 </div>
 </div>
@@ -2478,7 +2638,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>dststart</em></span>, </td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2504,8 +2664,22 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters that were changed in <em class="arg">'dst'</em> or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that were changed in <em class="arg">'dst'</em> or a negative value in case of error.</dd></dl>
+<pre>
+s_fill_lc
+--------------------------------------------------------------------------------
+        +---+                            +---+
+src:    | A |                            | A |
+        +---+                            +---+
+                                 =&gt;
+            +----len----+                    +----len----+
+        +---+-----------+---+            +---+---+   +---+---+   ds = dststart
+dst:    | C |     D     | E |            | C | A |...| A | E |
+        +---+-----------+---+            +---+---+   +---+---+
+            ds                               ds
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a44be6d75e0b823f85131176905f82d92" name="a44be6d75e0b823f85131176905f82d92"></a>
@@ -2522,7 +2696,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>dststart</em></span>, </td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2554,8 +2728,23 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters that were changed in <em class="arg">'dst'</em> or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that were changed in <em class="arg">'dst'</em> or a negative value in case of error.</dd></dl>
+<pre>
+s_fill_ls
+--------------------------------------------------------------------------------
+            ss                               ss                  ss = srcstart
+        +---+---+                        +---+---+
+src:    | A | B |                        | A | B |
+        +---+---+                        +---+---+
+                                 =&gt;
+            +----len----+                    +----len----+
+        +---+-----------+---+            +---+---+   +---+---+   ds = dststart
+dst:    | C |     D     | E |            | C | B |...| B | E |
+        +---+-----------+---+            +---+---+   +---+---+
+            ds                               ds
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="af374341f1c356f4542dab2add5843a07" name="af374341f1c356f4542dab2add5843a07"></a>
@@ -2662,12 +2851,28 @@ Variables</h2></td></tr>
     <tr><td class="paramname">src</td><td>Pointer to the s_string that will provide the sequence of characters to be copied to <em class="arg">'dst'</em>.</td></tr>
     <tr><td class="paramname">srcstart</td><td>The index of the first character in <em class="arg">'src'</em> that will be inserted in <em class="arg">'dst'</em>.</td></tr>
     <tr><td class="paramname">len</td><td>The length of the sequence of characters that will be copied from <em class="arg">'src'</em> to <em class="arg">'dst'</em>.</td></tr>
-    <tr><td class="paramname">filler</td><td>If <em class="arg">'filler'</em> is '\0', characters that would come from inexistent indexes in <em class="arg">'src'</em> (i.e. before the start or after the end) won't be changed, otherwise those characters will be replaced with <em class="arg">'filler'</em>. Also, if <em class="arg">'filler'</em> is not '\0', <em class="arg">'start'</em> can be beyond the current string length and the gap between <em class="arg">'the'</em> string end and <em class="arg">'start'</em> will be filled with <em class="arg">'filler'</em>, otherwise this type of operation is now allowed and the string won't be changed.</td></tr>
+    <tr><td class="paramname">filler</td><td>If <em class="arg">'filler'</em> is '\0', characters that would come from inexistent indexes in <em class="arg">'src'</em> (i.e. before the start or after the end) won't be changed, otherwise those characters will be replaced with <em class="arg">'filler'</em>. Also, if <em class="arg">'filler'</em> is not '\0', <em class="arg">'start'</em> can be beyond the current string length and the gap between the string end and <em class="arg">'start'</em> will be filled with <em class="arg">'filler'</em>, otherwise this type of operation is not allowed and the string won't be changed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error.</dd></dl>
+<pre>
+s_insert_l
+--------------------------------------------------------------------------------
+            ss                       ss                   ss = srcstart
+        +---+-------+---+        +---+-------+---+        se = srcend
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                     +--len--+
+        +---+---+                +---+-------+---+        ds = dststart
+dst:    | D | E |                | D |   B   | E |
+        +---+---+                +---+-------+---+
+            ds                       ds
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a10552285bd281ac238795b9ee77ea811" name="a10552285bd281ac238795b9ee77ea811"></a>
@@ -2784,8 +2989,19 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error.</dd></dl>
-<p>s_ltrim_c Tested OK!!! </p>
+<pre>
+s_ltrim_c
+--------------------------------------------------------------------------------
+charset: x..z
 
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+            st                                 st
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="abe64ec81510940dd1714e049b46f6b12" name="abe64ec81510940dd1714e049b46f6b12"></a>
@@ -2832,7 +3048,166 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error.</dd></dl>
-<p>s_ltrim Tested OK!!! </p>
+<pre>
+s_ltrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+            st                                 st
+
+--------------------------------------------------------------------------------
+</pre> 
+</div>
+</div>
+<a id="a3ae449da69dd9b02414c270af55a0f5c" name="a3ae449da69dd9b02414c270af55a0f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae449da69dd9b02414c270af55a0f5c">&#9670;&#160;</a></span>s_remove_ce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t s_remove_ce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *restrict</td>          <td class="paramname"><span class="paramname"><em>delim</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes characters of an s_string. </p>
+<pre class="fragment">           Removes all characters from the s_string \a 'str' that belong to
+           the set defined by s_string \a 'delim', between index 'start' and
+           \a 'end', inclusive.
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Pointer to the s_string that will have characters removed.</td></tr>
+    <tr><td class="paramname">start</td><td>The index in <em class="arg">'str'</em> of the first character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">end</td><td>The index in <em class="arg">'str'</em> of the last character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">delim</td><td>s_string with the set of characters that are to be removed from <em class="arg">'str'</em>. If <em class="arg">'delim'</em> is NULL, the characters to be removed are those recognized by the function <em class="arg">'isspace'</em>.</td></tr>
+    <tr><td class="paramname">delimstart</td><td>Index of the first character of <em class="arg">'delim'</em> that belongs to the set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were removed or a negative value in case of error.</dd></dl>
+<pre>
+s_remove_ce
+--------------------------------------------------------------------------------
+charset:    " *-,."
+
+        +----------------------------------+        +--------------------------+    s  = start
+str:    |+Some Text. More Text, *1234*XYZD*|    =&gt;  |+SomeTextMoreText1234XYZD*|    e  = end
+        +---+--------------------------+---+        +---+----------------------+
+            s                          e                s
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="s__string_8h_a3ae449da69dd9b02414c270af55a0f5c_cgraph.png" border="0" usemap="#as__string_8h_a3ae449da69dd9b02414c270af55a0f5c_cgraph" loading="lazy" alt=""/></div>
+<map name="as__string_8h_a3ae449da69dd9b02414c270af55a0f5c_cgraph" id="as__string_8h_a3ae449da69dd9b02414c270af55a0f5c_cgraph">
+<area shape="rect" title="Removes characters of an s_string." alt="" coords="5,5,105,32"/>
+<area shape="rect" href="s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="153,5,220,32"/>
+<area shape="poly" title=" " alt="" coords="105,16,140,18,134,19,105,21"/>
+<area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="268,5,360,32"/>
+<area shape="poly" title=" " alt="" coords="220,16,255,19,250,19,221,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3020a24718fb5faa58b454255c57eeb3" name="a3020a24718fb5faa58b454255c57eeb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3020a24718fb5faa58b454255c57eeb3">&#9670;&#160;</a></span>s_remove_se()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t s_remove_se </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict</td>          <td class="paramname"><span class="paramname"><em>delim</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>delimstart</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes characters of an s_string. </p>
+<pre class="fragment">           Removes all characters from the s_string \a 'str' that belong to
+           the set defined by s_string \a 'delim', between index 'start' and
+           \a 'end', inclusive.
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Pointer to the s_string that will have characters removed.</td></tr>
+    <tr><td class="paramname">start</td><td>The index in <em class="arg">'str'</em> of the first character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">end</td><td>The index in <em class="arg">'str'</em> of the last character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">delim</td><td>s_string with the set of characters that are to be removed from <em class="arg">'str'</em>. If <em class="arg">'delim'</em> is NULL, the characters to be removed are those recognized by the function <em class="arg">'isspace'</em>.</td></tr>
+    <tr><td class="paramname">delimstart</td><td>Index of the first character of <em class="arg">'delim'</em> that belongs to the set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were removed or a negative value in case of error.</dd></dl>
+<pre>
+s_remove_se
+--------------------------------------------------------------------------------
+charset:    " *-,."
+
+        +----------------------------------+        +--------------------------+    s  = start
+str:    |+Some Text. More Text, *1234*XYZD*|    =&gt;  |+SomeTextMoreText1234XYZD*|    e  = end
+        +---+--------------------------+---+        +---+----------------------+
+            s                          e                s
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="s__string_8h_a3020a24718fb5faa58b454255c57eeb3_cgraph.png" border="0" usemap="#as__string_8h_a3020a24718fb5faa58b454255c57eeb3_cgraph" loading="lazy" alt=""/></div>
+<map name="as__string_8h_a3020a24718fb5faa58b454255c57eeb3_cgraph" id="as__string_8h_a3020a24718fb5faa58b454255c57eeb3_cgraph">
+<area shape="rect" title="Removes characters of an s_string." alt="" coords="5,31,105,57"/>
+<area shape="rect" href="s__string_8c.html#a53fd1fdf21d9bb60101c74e35e77dccc" title=" " alt="" coords="153,5,242,32"/>
+<area shape="poly" title=" " alt="" coords="105,33,140,29,135,30,106,38"/>
+<area shape="rect" href="s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="290,31,357,57"/>
+<area shape="poly" title=" " alt="" coords="105,41,274,41,274,47,105,47"/>
+<area shape="poly" title=" " alt="" coords="243,25,277,34,272,34,242,30"/>
+<area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="405,31,498,57"/>
+<area shape="poly" title=" " alt="" coords="358,41,392,44,387,44,358,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2888,7 +3263,21 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error.</dd></dl>
-<p>s_replace_de tested OK! </p>
+<pre>
+s_replace_e
+--------------------------------------------------------------------------------
+            ss                   ss               ss = srcstart
+        +---+---+---+        +---+---+---+
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | D | E | F |        | D | B | F |        de = dstend
+        +---+---+---+        +---+---+---+
+            ds  de               ds  de
+
+--------------------------------------------------------------------------------
+</pre><p> s_replace_de tested OK! </p>
 
 </div>
 </div>
@@ -2938,8 +3327,22 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error.</dd></dl>
+<pre>
+s_replace*
+--------------------------------------------------------------------------------
+        +---+---+            +---+---+
+src:    | A | B |            | A | B |
+        +---+---+            +---+---+
+                             +---+     &lt;- de - ds + 1
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | C | D | E |        | C | A | E |        de = dstend
+        +---+---+---+        +---+---+---+
+            ds  de               ds  de
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="ae532c0c345bbde54717565eb35780ddd" name="ae532c0c345bbde54717565eb35780ddd"></a>
@@ -2993,8 +3396,26 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error.</dd></dl>
+<pre>
+s_replace_l
+--------------------------------------------------------------------------------
+            ss                       ss                   ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
 
+                            =&gt;
+
+            +--len--+                +--len--+
+        +---+-------+---+        +---+-------+---+        ds = dststart
+dst:    | D |   E   | F |        | D |   B   | F |
+        +---+-------+---+        +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="aa8574f463098608bb441eab4da328720" name="aa8574f463098608bb441eab4da328720"></a>
@@ -3021,7 +3442,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *restrict</td>          <td class="paramname"><span class="paramname"><em>srcs</em></span>, </td>
+          <td class="paramtype">const char *restrict</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3042,8 +3463,25 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that were copied to <em class="arg">'dst'</em> or a negative value in case of error.</dd></dl>
+<pre>
+s_replace_lc
+--------------------------------------------------------------------------------
+        +-------+---+            +-------+---+
+src:    |   A   | B |            |   A   | B |
+        +-------+---+            +-------+---+
+        +--len--+                +--len--+
 
+                            =&gt;
+
+            +--len--+                +--len--+
+        +---+-------+---+        +---+-------+---+        ds = dststart
+dst:    | C |   D   | E |        | C |   A   | E |
+        +---+-------+---+        +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a8268f579d6269e410f86e208728f02b7" name="a8268f579d6269e410f86e208728f02b7"></a>
@@ -3097,8 +3535,22 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'dst'</em> that were changed or a negative value in case of error.</dd></dl>
+<pre>
+s_replace_se
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | D | E | F |        | D | B | F |
+        +---+---+---+        +---+---+---+
+            ds                   ds
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a6c50d2a3b143fe2a4f5a04bc31648337" name="a6c50d2a3b143fe2a4f5a04bc31648337"></a>
@@ -3139,7 +3591,19 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error.</dd></dl>
-<p>s_rtrim_c Tested OK!!! </p>
+<pre>
+s_rtrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+                  st                           st
+
+--------------------------------------------------------------------------------
+</pre><p> s_rtrim_c Tested OK!!! </p>
 
 </div>
 </div>
@@ -3187,7 +3651,19 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were deleted or a negative value in case of error.</dd></dl>
-<p>s_rtrim Tested OK!!! </p>
+<pre>
+s_rtrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+                  st                           st
+
+--------------------------------------------------------------------------------
+</pre><p> s_rtrim Tested OK!!! </p>
 
 </div>
 </div>
@@ -3357,7 +3833,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>srcstart</em></span>&#160;)</td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>sstart</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3371,8 +3847,21 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The new length of <em class="arg">'dst'</em> after the appending or a negative value if an error occurred. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The new length of <em class="arg">'dst'</em> after the appending or a negative value if an error occurred.</dd></dl>
+<pre>
+s_strcat
+--------------------------------------------------------------------------------
+            ss                   ss                ss = srcstart
+        +---+---+            +---+---+
+src:    | A | B |            | A | B |
+        +---+---+            +---+---+
+                    =&gt;
+        +---+                +---+---+
+dst:    | C |                | C | B |
+        +---+                +---+---+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a3517077f0ff17bd04c01c8199dc0e136" name="a3517077f0ff17bd04c01c8199dc0e136"></a>
@@ -3402,8 +3891,20 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The new length of <em class="arg">'dst'</em> after the appending or a negative value if an error occurred. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The new length of <em class="arg">'dst'</em> after the appending or a negative value if an error occurred.</dd></dl>
+<pre>
+s_strcat_c
+--------------------------------------------------------------------------------
+        +---+                +---+
+src:    | A |                | A |
+        +---+                +---+
+                    =&gt;
+        +---+                +---+---+
+dst:    | C |                | C | A |
+        +---+                +---+---+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a0695e8a61367fde13f79ce35d4631284" name="a0695e8a61367fde13f79ce35d4631284"></a>
@@ -3632,8 +4133,20 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
-<div class="dynheader">
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strcpy
+--------------------------------------------------------------------------------
+            ss               ss                ss = srcstart
+        +---+---+        +---+---+
+src:    | A | B |        | A | B |
+        +---+---+        +---+---+
+                    =&gt;
+                         +---+
+dst:      ?              | B |
+                         +---+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8h_a11dca010d32f6458b0bd2ce8af4f1ab2_icgraph.png" border="0" usemap="#as__string_8h_a11dca010d32f6458b0bd2ce8af4f1ab2_icgraph" loading="lazy" alt=""/></div>
@@ -3645,7 +4158,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="246,70,215,72,214,67,251,69"/>
 <area shape="rect" href="s__string_8c.html#aad3bce8c8e3db8900bc075f564793e3e" title=" " alt="" coords="138,107,216,133"/>
 <area shape="poly" title=" " alt="" coords="254,88,212,109,210,104,249,90"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,56,90,83"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,56,90,83"/>
 <area shape="poly" title=" " alt="" coords="125,40,85,58,82,53,129,36"/>
 <area shape="poly" title=" " alt="" coords="68,41,61,37,47,35,35,37,28,41,26,47,30,55,24,56,21,47,23,38,33,32,48,29,64,32,73,40"/>
 <area shape="poly" title=" " alt="" coords="122,70,91,72,90,67,127,68"/>
@@ -3682,8 +4195,20 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
-<div class="dynheader">
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strcpy_c
+--------------------------------------------------------------------------------
+        +---+            +---+
+src:    | A |            | A |
+        +---+            +---+
+                    =&gt;
+                         +---+
+dst:      ?              | A |
+                         +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8h_ad6674b3b7d5474402da49e3c160cf7e1_icgraph.png" border="0" usemap="#as__string_8h_ad6674b3b7d5474402da49e3c160cf7e1_icgraph" loading="lazy" alt=""/></div>
@@ -3703,7 +4228,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="300,193,236,249,216,261,214,256,232,244,296,196"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="140,309,232,336"/>
 <area shape="poly" title=" " alt="" coords="311,196,280,249,259,275,236,299,219,311,217,306,232,295,255,272,276,246,307,199"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,157,90,184"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,157,90,184"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,113,74,89,105,58,158,53,156,85,102,108,71,136,42,143,39"/>
 <area shape="poly" title=" " alt="" coords="69,143,62,138,47,136,34,138,26,142,24,148,28,156,23,157,19,149,22,139,32,133,48,131,65,133,74,141"/>
 <area shape="poly" title=" " alt="" coords="142,92,139,97,98,129,65,158,61,155,95,125,136,92,146,89"/>
@@ -4086,8 +4611,24 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strlcat
+--------------------------------------------------------------------------------
+            ss                         ss                ss = srcstart
+        +---+-------+---+          +---+-------+---+
+src:    | A |   B   | C |          | A |   B   | C |
+        +---+-------+---+          +---+-------+---+
+                                       +-------+     &lt;- len - s_strlen(dst)
 
+                            =&gt;
+                                   +----len----+
+        +---+                      +---+-------+
+dst:    | D |                      | D |   B   |
+        +---+                      +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="aca18d82c5ee2314fe4f5e964d188ee57" name="aca18d82c5ee2314fe4f5e964d188ee57"></a>
@@ -4123,8 +4664,24 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strlcat_c
+--------------------------------------------------------------------------------
+        +-------+---+              +-------+---+
+src:    |   A   | B |              |   A   | B |
+        +-------+---+              +-------+---+
+                                   +-------+     &lt;- len - s_strlen(dst)
 
+                            =&gt;
+
+        +---+ &lt;- s_strlen(dst)     +----len----+
+        +---+                      +---+-------+
+dst:    | C |                      | C |   A   |
+        +---+                      +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="a1cfa6bc2de023953cd93d4f54e4f5f60" name="a1cfa6bc2de023953cd93d4f54e4f5f60"></a>
@@ -4165,8 +4722,23 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
-<div class="dynheader">
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strlcpy
+--------------------------------------------------------------------------------
+            ss                       ss                ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8h_a1cfa6bc2de023953cd93d4f54e4f5f60_icgraph.png" border="0" usemap="#as__string_8h_a1cfa6bc2de023953cd93d4f54e4f5f60_icgraph" loading="lazy" alt=""/></div>
@@ -4174,7 +4746,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Copies up to &#39;len&#39; characters of the contents of the s_string pointed to by &#39;src&#39; into the s_string p..." alt="" coords="271,29,345,56"/>
 <area shape="rect" href="s__string_8c.html#aabf07408a87c64ddf49bcac8bc118260" title=" " alt="" coords="138,29,223,56"/>
 <area shape="poly" title=" " alt="" coords="253,43,224,45,223,40,258,43"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,124,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,62,10,47,8,34,10,27,14,25,20,29,29,24,29,20,21,23,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -4215,8 +4787,22 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
-<div class="dynheader">
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strlcpy_c
+--------------------------------------------------------------------------------
+        +-------+---+        +-------+---+
+src:    |   A   | B |        |   A   | B |
+        +-------+---+        +-------+---+
+        +--len--+            +--len--+
+                        =&gt;
+                             +--len--+
+                             +-------+
+dst:        ?                |   A   |
+                             +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8h_a0723fbc44f02b9e936a78ca4d829ad1e_icgraph.png" border="0" usemap="#as__string_8h_a0723fbc44f02b9e936a78ca4d829ad1e_icgraph" loading="lazy" alt=""/></div>
@@ -4232,12 +4818,12 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="275,138,226,159,224,154,270,140"/>
 <area shape="rect" href="s__string_8c.html#a76a7484d5b9db7e0d8796325dfd04221" title=" " alt="" coords="141,208,230,235"/>
 <area shape="poly" title=" " alt="" coords="302,143,236,198,216,210,214,205,232,194,297,145"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,56,90,83"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,56,90,83"/>
 <area shape="poly" title=" " alt="" coords="131,40,88,58,85,53,134,36"/>
 <area shape="poly" title=" " alt="" coords="69,42,62,37,47,35,34,37,26,41,24,47,28,55,23,56,19,47,22,38,32,32,48,29,65,32,74,40"/>
 <area shape="poly" title=" " alt="" coords="120,71,91,72,89,67,124,68"/>
 <area shape="poly" title=" " alt="" coords="130,102,86,86,86,81,135,99"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="6,183,89,209"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="6,183,89,209"/>
 <area shape="poly" title=" " alt="" coords="127,182,90,191,89,186,132,180"/>
 <area shape="poly" title=" " alt="" coords="69,168,62,164,47,161,34,163,26,168,24,174,28,182,23,183,19,174,22,164,32,158,48,156,65,159,75,167"/>
 <area shape="poly" title=" " alt="" coords="123,211,89,206,89,201,129,210"/>
@@ -4321,7 +4907,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="259,33,226,29,226,24,264,33"/>
 <area shape="rect" href="s__string_8c.html#ab2e911d5e0c85efdfe520b92bcf1d677" title=" " alt="" coords="136,56,229,83"/>
 <area shape="poly" title=" " alt="" coords="264,54,230,63,229,58,259,55"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,31,88,57"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,31,88,57"/>
 <area shape="poly" title=" " alt="" coords="122,31,89,39,88,34,126,28"/>
 <area shape="poly" title=" " alt="" coords="68,16,61,12,46,9,33,11,26,16,24,22,28,30,22,31,18,22,21,13,31,6,47,4,63,7,73,15"/>
 <area shape="poly" title=" " alt="" coords="118,58,88,54,88,49,123,57"/>
@@ -4534,7 +5120,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="555,666,524,661,368,635,367,630,525,656,560,664"/>
 <area shape="rect" href="s__string_8c.html#ad5cce59fdc26ac29eb3e52d9bb4e7a62" title=" " alt="" coords="284,867,374,893"/>
 <area shape="poly" title=" " alt="" coords="606,703,574,757,552,784,526,807,489,831,449,850,375,873,373,868,447,845,487,826,523,803,548,780,570,754,602,707"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="284,208,374,235"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="284,208,374,235"/>
 <area shape="poly" title=" " alt="" coords="404,223,376,224,373,219,409,220"/>
 <area shape="poly" title=" " alt="" coords="352,194,345,189,329,187,315,189,307,193,305,199,309,207,304,208,300,199,303,190,313,184,329,181,347,184,357,192"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="151,107,222,133"/>
@@ -4549,7 +5135,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="300,197,282,173,266,137,261,106,254,77,234,46,223,35,221,30,238,42,258,75,266,105,271,136,286,171,305,196"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="141,56,233,83"/>
 <area shape="poly" title=" " alt="" coords="302,197,282,174,268,151,260,133,250,115,234,97,221,86,219,81,238,93,255,112,264,130,273,149,286,170,307,196"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,284,90,311"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,284,90,311"/>
 <area shape="poly" title=" " alt="" coords="140,144,140,147,110,182,86,220,56,284,51,283,81,218,106,179,136,143,143,140"/>
 <area shape="poly" title=" " alt="" coords="70,270,63,265,47,263,33,265,26,269,24,275,28,283,23,284,19,275,22,266,32,260,48,257,65,260,75,268"/>
 <area shape="poly" title=" " alt="" coords="141,195,139,198,93,244,61,284,56,282,89,240,136,194,144,190"/>
@@ -4557,7 +5143,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="126,285,92,292,88,288,129,281"/>
 <area shape="poly" title=" " alt="" coords="138,44,140,46,118,75,100,108,74,177,59,240,53,284,48,283,54,239,69,175,95,106,113,73,136,42,141,40"/>
 <area shape="poly" title=" " alt="" coords="139,95,140,96,105,145,80,199,63,248,54,284,49,283,58,247,75,197,100,142,136,93,141,90"/>
-<area shape="rect" href="_list_of_functions_8h.html#af374341f1c356f4542dab2add5843a07" title=" " alt="" coords="288,133,370,160"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#af374341f1c356f4542dab2add5843a07" title=" " alt="" coords="288,133,370,160"/>
 <area shape="poly" title=" " alt="" coords="417,156,371,152,369,148,421,153"/>
 <area shape="poly" title=" " alt="" coords="352,119,345,114,329,112,315,114,307,118,305,124,309,133,304,133,300,125,303,115,313,109,329,107,347,109,357,117"/>
 <area shape="poly" title=" " alt="" coords="120,313,92,307,89,303,125,309"/>
@@ -4566,7 +5152,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="409,540,349,548,277,547,240,543,203,534,168,521,136,502,113,482,95,458,69,403,54,351,50,314,50,308,59,350,74,401,99,455,117,478,139,498,171,516,205,529,241,538,278,542,349,542,413,537"/>
 <area shape="poly" title=" " alt="" coords="406,1189,345,1186,312,1177,283,1161,245,1131,217,1102,197,1072,182,1040,160,969,135,881,111,796,91,709,65,539,51,397,49,314,49,309,57,397,70,538,96,708,116,795,140,879,165,968,187,1038,201,1069,221,1098,248,1127,285,1156,314,1172,346,1181,411,1190"/>
 <area shape="poly" title=" " alt="" coords="417,254,370,238,368,233,421,252"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="146,841,228,868"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="146,841,228,868"/>
 <area shape="poly" title=" " alt="" coords="420,930,355,924,283,908,242,891,210,871,209,866,245,886,285,903,356,919,425,928"/>
 <area shape="poly" title=" " alt="" coords="209,827,202,822,187,820,173,822,165,826,163,832,167,841,162,841,158,833,161,823,171,817,187,815,204,817,214,825"/>
 <area shape="poly" title=" " alt="" coords="413,972,350,958,283,932,236,901,202,871,202,866,239,897,285,927,352,953,418,971"/>
@@ -4629,8 +5215,23 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strncat
+--------------------------------------------------------------------------------
+            ss                           ss                ss = srcstart
+        +---+-------+---+            +---+-------+---+
+src:    | A |   B   | C |            | A |   B   | C |
+        +---+-------+---+            +---+-------+---+
+            +--len--+                    +--len--+
+                            =&gt;
+                                         +--len--+
+        +---+                        +---+-------+
+dst:    | D |                        | D |   B   |
+        +---+                        +---+-------+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="ad5cce59fdc26ac29eb3e52d9bb4e7a62" name="ad5cce59fdc26ac29eb3e52d9bb4e7a62"></a>
@@ -4666,8 +5267,22 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters stored in <em class="arg">'dst'</em> or a negative number in case of error.</dd></dl>
+<pre>
+s_strncat_c
+--------------------------------------------------------------------------------
+        +-------+---+            +-------+---+
+src:    |   A   | B |            |   A   | B |
+        +-------+---+            +-------+---+
+        +--len--+                +--len--+
+                        =&gt;
+                                     +--len--+
+        +---+                    +---+-------+
+dst:    | C |                    | C |   A   |
+        +---+                    +---+-------+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a id="adbe6a62daea04c12f6dcc0968c881410" name="adbe6a62daea04c12f6dcc0968c881410"></a>
@@ -4838,7 +5453,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="275,106,240,114,239,109,280,105"/>
 <area shape="rect" href="s__string_8c.html#a3c3f10c06cb319c048af775f2539f579" title=" " alt="" coords="140,157,243,184"/>
 <area shape="poly" title=" " alt="" coords="303,115,246,148,223,159,221,154,244,143,297,117"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,81,90,108"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,81,90,108"/>
 <area shape="poly" title=" " alt="" coords="145,41,139,46,74,83,71,79,136,42,149,38"/>
 <area shape="poly" title=" " alt="" coords="70,67,63,62,47,60,33,62,25,66,23,72,27,80,22,81,18,73,21,63,31,57,48,55,65,57,75,65"/>
 <area shape="poly" title=" " alt="" coords="120,83,91,90,89,85,124,80"/>
@@ -5655,8 +6270,17 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>How many characters were removed or a negative value if an error occurred. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>How many characters were removed or a negative value if an error occurred.</dd></dl>
+<pre>
+s_truncate
+--------------------------------------------------------------------------------
+            ln                   ln               ln = len
+        +---+---+            +---+
+str:    | A | B |        =&gt;  | A |
+        +---+---+            +---+
 
+--------------------------------------------------------------------------------
+</pre> 
 </div>
 </div>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>

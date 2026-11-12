@@ -1142,7 +1142,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_alltrim
+--------------------------------------------------------------------------------
+delim:          x..z
+replacement:    '#'
+
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    s  = start
+str:    | A | cs* | B | cs* | C | cs* | D |    =&gt;  | A | B |#| C | D |    e  = end
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    cs*= characters from delim
+            s                         e
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_cgraph" loading="lazy" alt=""/></div>
@@ -1206,7 +1218,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_alltrim_se
+--------------------------------------------------------------------------------
+delim:          x..z
+replacement:    '#'
+
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    s  = start
+str:    | A | cs* | B | cs* | C | cs* | D |    =&gt;  | A | B |#| C | D |    e  = end
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    cs*= characters from delim
+            s                         e
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a4dc6d94e8df5e707de5817a4543e1e60_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a4dc6d94e8df5e707de5817a4543e1e60_cgraph" loading="lazy" alt=""/></div>
@@ -1453,7 +1477,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_delete_e Tested OK!!! </p>
+<pre>
+s_delete_e
+--------------------------------------------------------------------------------
+            ss  se               ss               ss = strstart
+        +---+---+---+        +---+---+            se = strend
+str:    | A | B | C |    =&gt;  | A | C |
+        +---+---+---+        +---+---+
+
+--------------------------------------------------------------------------------
+</pre><p> s_delete_e Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1503,7 +1536,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_delete_l Tested OK!!! </p>
+<pre>
+s_delete_l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = strstart
+        +---+-------+---+        +---+---+
+str:    | A |   B   | C |    =&gt;  | A | C |
+        +---+-------+---+        +---+---+
+            +--len--+
+
+--------------------------------------------------------------------------------
+</pre><p> s_delete_l Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1558,7 +1601,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_e
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a199110a9f1fb62576398bbe3a6bd1845_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a199110a9f1fb62576398bbe3a6bd1845_cgraph" loading="lazy" alt=""/></div>
@@ -1621,7 +1677,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_ec
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a33a80e3ac73ee71053d0073e9710d844_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a33a80e3ac73ee71053d0073e9710d844_cgraph" loading="lazy" alt=""/></div>
@@ -1678,7 +1747,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_aabf07408a87c64ddf49bcac8bc118260_cgraph.png" border="0" usemap="#a_list_of_functions_8h_aabf07408a87c64ddf49bcac8bc118260_cgraph" loading="lazy" alt=""/></div>
@@ -1742,7 +1826,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_lc
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a176cc7995dcb56167cd7cf0c897bf723_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a176cc7995dcb56167cd7cf0c897bf723_cgraph" loading="lazy" alt=""/></div>
@@ -1794,7 +1893,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?e
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a799754db581681229535d434fd59e8fa_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a799754db581681229535d434fd59e8fa_cgraph" loading="lazy" alt=""/></div>
@@ -1962,7 +2074,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?ec
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_aac58867e38c4fc2b9b1a2c238cd3d4cf_cgraph.png" border="0" usemap="#a_list_of_functions_8h_aac58867e38c4fc2b9b1a2c238cd3d4cf_cgraph" loading="lazy" alt=""/></div>
@@ -2128,7 +2253,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a0ca71ab838165620559a2b7dc475a843_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a0ca71ab838165620559a2b7dc475a843_cgraph" loading="lazy" alt=""/></div>
@@ -2296,7 +2437,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?l?
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a3c3f10c06cb319c048af775f2539f579_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a3c3f10c06cb319c048af775f2539f579_cgraph" loading="lazy" alt=""/></div>
@@ -2467,7 +2624,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_fill_l tested OK! </p>
+<pre>
+s_fill_l
+--------------------------------------------------------------------------------
+src:    'c'
+
+            +----len----+       =&gt;           +----len----+
+        +---+-----------+---+            +---+----   ----+---+    ds = dststart
+dst:    | A |     B     | D |            | A |cccc...cccc| D |
+        +---+-----------+---+            +---+----   ----+---+
+            ds                               ds
+
+--------------------------------------------------------------------------------
+</pre><p> s_fill_l tested OK! </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2496,7 +2665,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>dststart</em></span>, </td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2510,7 +2679,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_fill_lc
+--------------------------------------------------------------------------------
+        +---+                            +---+
+src:    | A |                            | A |
+        +---+                            +---+
+                                 =&gt;
+            +----len----+                    +----len----+
+        +---+-----------+---+            +---+---+   +---+---+   ds = dststart
+dst:    | C |     D     | E |            | C | A |...| A | E |
+        +---+-----------+---+            +---+---+   +---+---+
+            ds                               ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_ab18655c3b3b59f078f97dc4a65bc9f67_icgraph.png" border="0" usemap="#a_list_of_functions_8h_ab18655c3b3b59f078f97dc4a65bc9f67_icgraph" loading="lazy" alt=""/></div>
@@ -2538,7 +2721,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>dststart</em></span>, </td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2557,7 +2740,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_fill_ls
+--------------------------------------------------------------------------------
+            ss                               ss                  ss = srcstart
+        +---+---+                        +---+---+
+src:    | A | B |                        | A | B |
+        +---+---+                        +---+---+
+                                 =&gt;
+            +----len----+                    +----len----+
+        +---+-----------+---+            +---+---+   +---+---+   ds = dststart
+dst:    | C |     D     | E |            | C | B |...| B | E |
+        +---+-----------+---+            +---+---+   +---+---+
+            ds                               ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a44be6d75e0b823f85131176905f82d92_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a44be6d75e0b823f85131176905f82d92_cgraph" loading="lazy" alt=""/></div>
@@ -2693,7 +2891,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_insert_l
+--------------------------------------------------------------------------------
+            ss                       ss                   ss = srcstart
+        +---+-------+---+        +---+-------+---+        se = srcend
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                     +--len--+
+        +---+---+                +---+-------+---+        ds = dststart
+dst:    | D | E |                | D |   B   | E |
+        +---+---+                +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a61a5665aab837f0f132754ad8a535b3d_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a61a5665aab837f0f132754ad8a535b3d_cgraph" loading="lazy" alt=""/></div>
@@ -3035,8 +3249,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_ltrim_c Tested OK!!! </p>
-<div class="dynheader">
+<pre>
+s_ltrim_c
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+            st                                 st
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_af71a829cd1c65e705fe300744fcd4ab4_cgraph.png" border="0" usemap="#a_list_of_functions_8h_af71a829cd1c65e705fe300744fcd4ab4_cgraph" loading="lazy" alt=""/></div>
@@ -3090,8 +3315,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_ltrim Tested OK!!! </p>
-<div class="dynheader">
+<pre>
+s_ltrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+            st                                 st
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_abe64ec81510940dd1714e049b46f6b12_cgraph.png" border="0" usemap="#a_list_of_functions_8h_abe64ec81510940dd1714e049b46f6b12_cgraph" loading="lazy" alt=""/></div>
@@ -3158,7 +3394,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_replace_de tested OK! </p>
+<pre>
+s_replace_e
+--------------------------------------------------------------------------------
+            ss                   ss               ss = srcstart
+        +---+---+---+        +---+---+---+
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | D | E | F |        | D | B | F |        de = dstend
+        +---+---+---+        +---+---+---+
+            ds  de               ds  de
+
+--------------------------------------------------------------------------------
+</pre><p> s_replace_de tested OK! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -3222,7 +3472,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace*
+--------------------------------------------------------------------------------
+        +---+---+            +---+---+
+src:    | A | B |            | A | B |
+        +---+---+            +---+---+
+                             +---+     &lt;- de - ds + 1
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | C | D | E |        | C | A | E |        de = dstend
+        +---+---+---+        +---+---+---+
+            ds  de               ds  de
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_ab77110c2e86901bb7b8f5650e126e907_cgraph.png" border="0" usemap="#a_list_of_functions_8h_ab77110c2e86901bb7b8f5650e126e907_cgraph" loading="lazy" alt=""/></div>
@@ -3287,7 +3551,25 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace_l
+--------------------------------------------------------------------------------
+            ss                       ss                   ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+
+                            =&gt;
+
+            +--len--+                +--len--+
+        +---+-------+---+        +---+-------+---+        ds = dststart
+dst:    | D |   E   | F |        | D |   B   | F |
+        +---+-------+---+        +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_ae532c0c345bbde54717565eb35780ddd_cgraph.png" border="0" usemap="#a_list_of_functions_8h_ae532c0c345bbde54717565eb35780ddd_cgraph" loading="lazy" alt=""/></div>
@@ -3341,7 +3623,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *restrict</td>          <td class="paramname"><span class="paramname"><em>srcs</em></span>, </td>
+          <td class="paramtype">const char *restrict</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3350,7 +3632,24 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace_lc
+--------------------------------------------------------------------------------
+        +-------+---+            +-------+---+
+src:    |   A   | B |            |   A   | B |
+        +-------+---+            +-------+---+
+        +--len--+                +--len--+
+
+                            =&gt;
+
+            +--len--+                +--len--+
+        +---+-------+---+        +---+-------+---+        ds = dststart
+dst:    | C |   D   | E |        | C |   A   | E |
+        +---+-------+---+        +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_aa8574f463098608bb441eab4da328720_cgraph.png" border="0" usemap="#a_list_of_functions_8h_aa8574f463098608bb441eab4da328720_cgraph" loading="lazy" alt=""/></div>
@@ -3415,7 +3714,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace_se
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | D | E | F |        | D | B | F |
+        +---+---+---+        +---+---+---+
+            ds                   ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a8268f579d6269e410f86e208728f02b7_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a8268f579d6269e410f86e208728f02b7_cgraph" loading="lazy" alt=""/></div>
@@ -3468,7 +3781,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_rtrim_c Tested OK!!! </p>
+<pre>
+s_rtrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+                  st                           st
+
+--------------------------------------------------------------------------------
+</pre><p> s_rtrim_c Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -3523,7 +3848,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_rtrim Tested OK!!! </p>
+<pre>
+s_rtrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+                  st                           st
+
+--------------------------------------------------------------------------------
+</pre><p> s_rtrim Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -3775,11 +4112,24 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>srcstart</em></span>&#160;)</td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>sstart</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcat
+--------------------------------------------------------------------------------
+            ss                   ss                ss = srcstart
+        +---+---+            +---+---+
+src:    | A | B |            | A | B |
+        +---+---+            +---+---+
+                    =&gt;
+        +---+                +---+---+
+dst:    | C |                | C | B |
+        +---+                +---+---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_ac0b35b6c8cdf434401863d8e1e14102a_cgraph.png" border="0" usemap="#a_list_of_functions_8h_ac0b35b6c8cdf434401863d8e1e14102a_cgraph" loading="lazy" alt=""/></div>
@@ -3827,7 +4177,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcat_c
+--------------------------------------------------------------------------------
+        +---+                +---+
+src:    | A |                | A |
+        +---+                +---+
+                    =&gt;
+        +---+                +---+---+
+dst:    | C |                | C | A |
+        +---+                +---+---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a3517077f0ff17bd04c01c8199dc0e136_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a3517077f0ff17bd04c01c8199dc0e136_cgraph" loading="lazy" alt=""/></div>
@@ -4208,7 +4570,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcpy
+--------------------------------------------------------------------------------
+            ss               ss                ss = srcstart
+        +---+---+        +---+---+
+src:    | A | B |        | A | B |
+        +---+---+        +---+---+
+                    =&gt;
+                         +---+
+dst:      ?              | B |
+                         +---+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a11dca010d32f6458b0bd2ce8af4f1ab2_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a11dca010d32f6458b0bd2ce8af4f1ab2_cgraph" loading="lazy" alt=""/></div>
@@ -4256,7 +4630,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcpy_c
+--------------------------------------------------------------------------------
+        +---+            +---+
+src:    | A |            | A |
+        +---+            +---+
+                    =&gt;
+                         +---+
+dst:      ?              | A |
+                         +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_ad6674b3b7d5474402da49e3c160cf7e1_cgraph.png" border="0" usemap="#a_list_of_functions_8h_ad6674b3b7d5474402da49e3c160cf7e1_cgraph" loading="lazy" alt=""/></div>
@@ -5076,7 +5462,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcat
+--------------------------------------------------------------------------------
+            ss                         ss                ss = srcstart
+        +---+-------+---+          +---+-------+---+
+src:    | A |   B   | C |          | A |   B   | C |
+        +---+-------+---+          +---+-------+---+
+                                       +-------+     &lt;- len - s_strlen(dst)
+
+                            =&gt;
+                                   +----len----+
+        +---+                      +---+-------+
+dst:    | D |                      | D |   B   |
+        +---+                      +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a79073c234b6ecb25aa8cc6df3752d1c8_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a79073c234b6ecb25aa8cc6df3752d1c8_cgraph" loading="lazy" alt=""/></div>
@@ -5129,7 +5531,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcat_c
+--------------------------------------------------------------------------------
+        +-------+---+              +-------+---+
+src:    |   A   | B |              |   A   | B |
+        +-------+---+              +-------+---+
+                                   +-------+     &lt;- len - s_strlen(dst)
+
+                            =&gt;
+
+        +---+ &lt;- s_strlen(dst)     +----len----+
+        +---+                      +---+-------+
+dst:    | C |                      | C |   A   |
+        +---+                      +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_aca18d82c5ee2314fe4f5e964d188ee57_cgraph.png" border="0" usemap="#a_list_of_functions_8h_aca18d82c5ee2314fe4f5e964d188ee57_cgraph" loading="lazy" alt=""/></div>
@@ -5184,7 +5602,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcpy
+--------------------------------------------------------------------------------
+            ss                       ss                ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a1cfa6bc2de023953cd93d4f54e4f5f60_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a1cfa6bc2de023953cd93d4f54e4f5f60_cgraph" loading="lazy" alt=""/></div>
@@ -5237,7 +5670,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcpy_c
+--------------------------------------------------------------------------------
+        +-------+---+        +-------+---+
+src:    |   A   | B |        |   A   | B |
+        +-------+---+        +-------+---+
+        +--len--+            +--len--+
+                        =&gt;
+                             +--len--+
+                             +-------+
+dst:        ?                |   A   |
+                             +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a0723fbc44f02b9e936a78ca4d829ad1e_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a0723fbc44f02b9e936a78ca4d829ad1e_cgraph" loading="lazy" alt=""/></div>
@@ -5894,7 +6341,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strncat
+--------------------------------------------------------------------------------
+            ss                           ss                ss = srcstart
+        +---+-------+---+            +---+-------+---+
+src:    | A |   B   | C |            | A |   B   | C |
+        +---+-------+---+            +---+-------+---+
+            +--len--+                    +--len--+
+                            =&gt;
+                                         +--len--+
+        +---+                        +---+-------+
+dst:    | D |                        | D |   B   |
+        +---+                        +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a36e24cf526819321e45aee5d4e20060c_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a36e24cf526819321e45aee5d4e20060c_cgraph" loading="lazy" alt=""/></div>
@@ -5947,7 +6409,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strncat_c
+--------------------------------------------------------------------------------
+        +-------+---+            +-------+---+
+src:    |   A   | B |            |   A   | B |
+        +-------+---+            +-------+---+
+        +--len--+                +--len--+
+                        =&gt;
+                                     +--len--+
+        +---+                    +---+-------+
+dst:    | C |                    | C |   A   |
+        +---+                    +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_ad5cce59fdc26ac29eb3e52d9bb4e7a62_cgraph.png" border="0" usemap="#a_list_of_functions_8h_ad5cce59fdc26ac29eb3e52d9bb4e7a62_cgraph" loading="lazy" alt=""/></div>
@@ -7901,7 +8377,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_truncate
+--------------------------------------------------------------------------------
+            ln                   ln               ln = len
+        +---+---+            +---+
+str:    | A | B |        =&gt;  | A |
+        +---+---+            +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_list_of_functions_8h_a42dfa782745a4d69055390d96b97b7ac_cgraph.png" border="0" usemap="#a_list_of_functions_8h_a42dfa782745a4d69055390d96b97b7ac_cgraph" loading="lazy" alt=""/></div>

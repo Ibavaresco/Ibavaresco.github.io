@@ -241,6 +241,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a6c50d2a3b143fe2a4f5a04bc31648337" id="r_a6c50d2a3b143fe2a4f5a04bc31648337"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a6c50d2a3b143fe2a4f5a04bc31648337">s_rtrim_c</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, const char *restrict delim)</td></tr>
 <tr class="memitem:a4dc6d94e8df5e707de5817a4543e1e60" id="r_a4dc6d94e8df5e707de5817a4543e1e60"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a4dc6d94e8df5e707de5817a4543e1e60">s_alltrim_se</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, ssize_t end, const <a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict delim, ssize_t delimstart, int replacement)</td></tr>
 <tr class="memitem:a6eb4b489c8f7f8fd8e5b8674c1ebfeea" id="r_a6eb4b489c8f7f8fd8e5b8674c1ebfeea"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a6eb4b489c8f7f8fd8e5b8674c1ebfeea">s_alltrim_ce</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, ssize_t end, const char *restrict delim, int replacement)</td></tr>
+<tr class="memitem:a3020a24718fb5faa58b454255c57eeb3" id="r_a3020a24718fb5faa58b454255c57eeb3"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a3020a24718fb5faa58b454255c57eeb3">s_remove_se</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, ssize_t end, const <a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict delim, ssize_t delimstart)</td></tr>
+<tr class="memdesc:a3020a24718fb5faa58b454255c57eeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes characters of an s_string.  <br /></td></tr>
+<tr class="memitem:a3ae449da69dd9b02414c270af55a0f5c" id="r_a3ae449da69dd9b02414c270af55a0f5c"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a3ae449da69dd9b02414c270af55a0f5c">s_remove_ce</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict str, ssize_t start, ssize_t end, const char *restrict delim)</td></tr>
+<tr class="memdesc:a3ae449da69dd9b02414c270af55a0f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes characters of an s_string.  <br /></td></tr>
 <tr class="memitem:a61a5665aab837f0f132754ad8a535b3d" id="r_a61a5665aab837f0f132754ad8a535b3d"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a61a5665aab837f0f132754ad8a535b3d">s_insert_l</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict dst, ssize_t dststart, const <a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict src, ssize_t srcstart, ssize_t len, int filler)</td></tr>
 <tr class="memitem:ae80d8a8e3e02b2b881b55f2f64b01b51" id="r_ae80d8a8e3e02b2b881b55f2f64b01b51"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#ae80d8a8e3e02b2b881b55f2f64b01b51">s_extins_lc</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict dst, ssize_t dststart, const char *restrict src, ssize_t srcstart, ssize_t len, int filler)</td></tr>
 <tr class="memitem:ad468f1874e80c45cd6f48cc408c769de" id="r_ad468f1874e80c45cd6f48cc408c769de"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad468f1874e80c45cd6f48cc408c769de">s_sprintf</a> (<a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict dst, ssize_t dststart, int filler, const <a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict fmt, ssize_t fmtstart,...)</td></tr>
@@ -291,7 +295,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ae8a705812038d53510491166bdd3ef2a_icgraph.png" border="0" usemap="#as__string_8c_ae8a705812038d53510491166bdd3ef2a_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ae8a705812038d53510491166bdd3ef2a_icgraph" id="as__string_8c_ae8a705812038d53510491166bdd3ef2a_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,506,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,299,131,295,123,298,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -306,7 +310,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -363,7 +367,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_acb9cb3055f279a8c49b610c4d9173b11_icgraph.png" border="0" usemap="#as__string_8c_acb9cb3055f279a8c49b610c4d9173b11_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_acb9cb3055f279a8c49b610c4d9173b11_icgraph" id="as__string_8c_acb9cb3055f279a8c49b610c4d9173b11_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,509,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,404,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -378,7 +382,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -481,7 +485,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a709557fe1d814c37b4a191e25ae5b0c5_icgraph.png" border="0" usemap="#as__string_8c_a709557fe1d814c37b4a191e25ae5b0c5_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a709557fe1d814c37b4a191e25ae5b0c5_icgraph" id="as__string_8c_a709557fe1d814c37b4a191e25ae5b0c5_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,513,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -496,7 +500,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -558,7 +562,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a689f66e307a338afeda3a612eb1cdde0_icgraph.png" border="0" usemap="#as__string_8c_a689f66e307a338afeda3a612eb1cdde0_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a689f66e307a338afeda3a612eb1cdde0_icgraph" id="as__string_8c_a689f66e307a338afeda3a612eb1cdde0_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,516,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,404,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -573,7 +577,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -630,7 +634,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a8936b46c65694d0ae95b7d1859de877f_icgraph.png" border="0" usemap="#as__string_8c_a8936b46c65694d0ae95b7d1859de877f_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a8936b46c65694d0ae95b7d1859de877f_icgraph" id="as__string_8c_a8936b46c65694d0ae95b7d1859de877f_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,496,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,337,113,323,111,310,113,303,117,301,123,305,132,300,131,296,123,298,114,308,108,323,105,340,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -645,7 +649,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -691,7 +695,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_alltrim
+--------------------------------------------------------------------------------
+delim:          x..z
+replacement:    '#'
+
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    s  = start
+str:    | A | cs* | B | cs* | C | cs* | D |    =&gt;  | A | B |#| C | D |    e  = end
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    cs*= characters from delim
+            s                         e
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_cgraph.png" border="0" usemap="#as__string_8c_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_cgraph" loading="lazy" alt=""/></div>
@@ -709,7 +725,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_icgraph.png" border="0" usemap="#as__string_8c_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_icgraph" id="as__string_8c_a6eb4b489c8f7f8fd8e5b8674c1ebfeea_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,229,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,62,10,47,8,34,10,27,14,25,20,29,29,23,29,19,21,22,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -755,7 +771,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_alltrim_se
+--------------------------------------------------------------------------------
+delim:          x..z
+replacement:    '#'
+
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    s  = start
+str:    | A | cs* | B | cs* | C | cs* | D |    =&gt;  | A | B |#| C | D |    e  = end
+        +---+-----+---+-----+---+-----+---+        +---+---+-+---+---+    cs*= characters from delim
+            s                         e
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a4dc6d94e8df5e707de5817a4543e1e60_cgraph.png" border="0" usemap="#as__string_8c_a4dc6d94e8df5e707de5817a4543e1e60_cgraph" loading="lazy" alt=""/></div>
@@ -776,7 +804,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a4dc6d94e8df5e707de5817a4543e1e60_icgraph.png" border="0" usemap="#as__string_8c_a4dc6d94e8df5e707de5817a4543e1e60_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a4dc6d94e8df5e707de5817a4543e1e60_icgraph" id="as__string_8c_a4dc6d94e8df5e707de5817a4543e1e60_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,229,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,62,10,47,8,34,10,27,14,25,20,29,29,23,29,19,21,22,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -821,7 +849,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a45b1ee77c4f918067a1675778ce1f68e_icgraph.png" border="0" usemap="#as__string_8c_a45b1ee77c4f918067a1675778ce1f68e_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a45b1ee77c4f918067a1675778ce1f68e_icgraph" id="as__string_8c_a45b1ee77c4f918067a1675778ce1f68e_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,519,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -836,7 +864,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -887,7 +915,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a5448dfd5f1f73e3a465b265cf4d3a5f9_icgraph.png" border="0" usemap="#as__string_8c_a5448dfd5f1f73e3a465b265cf4d3a5f9_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a5448dfd5f1f73e3a465b265cf4d3a5f9_icgraph" id="as__string_8c_a5448dfd5f1f73e3a465b265cf4d3a5f9_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,488,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="343,117,337,113,323,111,310,113,303,117,302,123,305,132,300,131,296,123,299,114,308,108,323,105,339,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -902,7 +930,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -971,7 +999,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_delete_e Tested OK!!! </p>
+<pre>
+s_delete_e
+--------------------------------------------------------------------------------
+            ss  se               ss               ss = strstart
+        +---+---+---+        +---+---+            se = strend
+str:    | A | B | C |    =&gt;  | A | C |
+        +---+---+---+        +---+---+
+
+--------------------------------------------------------------------------------
+</pre><p> s_delete_e Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -990,7 +1027,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a034fb3b846d2a4f24bc61c2c2d489b52_icgraph.png" border="0" usemap="#as__string_8c_a034fb3b846d2a4f24bc61c2c2d489b52_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a034fb3b846d2a4f24bc61c2c2d489b52_icgraph" id="as__string_8c_a034fb3b846d2a4f24bc61c2c2d489b52_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,222,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,62,10,47,8,34,10,27,14,25,20,29,29,24,29,20,21,23,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -1021,7 +1058,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_delete_l Tested OK!!! </p>
+<pre>
+s_delete_l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = strstart
+        +---+-------+---+        +---+---+
+str:    | A |   B   | C |    =&gt;  | A | C |
+        +---+-------+---+        +---+---+
+            +--len--+
+
+--------------------------------------------------------------------------------
+</pre><p> s_delete_l Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1040,7 +1087,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a1e75822aab4c263d7166bc5e60370648_icgraph.png" border="0" usemap="#as__string_8c_a1e75822aab4c263d7166bc5e60370648_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a1e75822aab4c263d7166bc5e60370648_icgraph" id="as__string_8c_a1e75822aab4c263d7166bc5e60370648_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,218,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,61,10,47,8,34,10,27,14,26,20,29,29,24,29,20,21,23,11,33,5,48,3,64,5,73,14"/>
 </map>
@@ -1117,7 +1164,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_e
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a199110a9f1fb62576398bbe3a6bd1845_cgraph.png" border="0" usemap="#as__string_8c_a199110a9f1fb62576398bbe3a6bd1845_cgraph" loading="lazy" alt=""/></div>
@@ -1144,7 +1204,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a199110a9f1fb62576398bbe3a6bd1845_icgraph.png" border="0" usemap="#as__string_8c_a199110a9f1fb62576398bbe3a6bd1845_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a199110a9f1fb62576398bbe3a6bd1845_icgraph" id="as__string_8c_a199110a9f1fb62576398bbe3a6bd1845_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,227,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,62,10,47,8,34,10,27,14,25,20,29,29,23,29,20,21,22,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -1180,7 +1240,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_ec
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a33a80e3ac73ee71053d0073e9710d844_cgraph.png" border="0" usemap="#as__string_8c_a33a80e3ac73ee71053d0073e9710d844_cgraph" loading="lazy" alt=""/></div>
@@ -1201,7 +1274,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a33a80e3ac73ee71053d0073e9710d844_icgraph.png" border="0" usemap="#as__string_8c_a33a80e3ac73ee71053d0073e9710d844_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a33a80e3ac73ee71053d0073e9710d844_icgraph" id="as__string_8c_a33a80e3ac73ee71053d0073e9710d844_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,234,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,62,10,47,8,34,10,26,14,24,20,28,29,23,29,19,21,22,11,32,5,48,3,65,5,75,14"/>
 </map>
@@ -1237,7 +1310,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_aabf07408a87c64ddf49bcac8bc118260_cgraph.png" border="0" usemap="#as__string_8c_aabf07408a87c64ddf49bcac8bc118260_cgraph" loading="lazy" alt=""/></div>
@@ -1265,7 +1353,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_aabf07408a87c64ddf49bcac8bc118260_icgraph.png" border="0" usemap="#as__string_8c_aabf07408a87c64ddf49bcac8bc118260_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aabf07408a87c64ddf49bcac8bc118260_icgraph" id="as__string_8c_aabf07408a87c64ddf49bcac8bc118260_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,223,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,124,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,62,10,47,8,34,10,27,14,25,20,29,29,24,29,20,21,23,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -1301,7 +1389,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_lc
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a176cc7995dcb56167cd7cf0c897bf723_cgraph.png" border="0" usemap="#as__string_8c_a176cc7995dcb56167cd7cf0c897bf723_cgraph" loading="lazy" alt=""/></div>
@@ -1322,7 +1425,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a176cc7995dcb56167cd7cf0c897bf723_icgraph.png" border="0" usemap="#as__string_8c_a176cc7995dcb56167cd7cf0c897bf723_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a176cc7995dcb56167cd7cf0c897bf723_icgraph" id="as__string_8c_a176cc7995dcb56167cd7cf0c897bf723_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,230,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,62,10,47,8,34,10,26,14,25,20,28,29,23,29,19,21,22,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -1353,7 +1456,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?e
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a799754db581681229535d434fd59e8fa_cgraph.png" border="0" usemap="#as__string_8c_a799754db581681229535d434fd59e8fa_cgraph" loading="lazy" alt=""/></div>
@@ -1368,9 +1484,9 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="666,883,688,866,715,831,737,792,768,727,771,722,742,795,719,834,692,869,669,887"/>
 <area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="871,75,964,102"/>
 <area shape="poly" title=" " alt="" coords="783,682,908,119,911,115,788,684"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="298,785,388,811"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="298,785,388,811"/>
 <area shape="poly" title=" " alt="" coords="204,1150,330,829,332,824,209,1152"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="294,1163,392,1190"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="294,1163,392,1190"/>
 <area shape="poly" title=" " alt="" coords="245,1166,281,1170,276,1173,248,1171"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="738,1165,823,1191"/>
 <area shape="poly" title=" " alt="" coords="205,1176,226,1254,244,1308,269,1368,300,1429,339,1488,386,1540,413,1562,442,1581,477,1599,510,1611,541,1616,571,1615,600,1608,630,1595,659,1575,688,1550,705,1525,721,1487,746,1390,764,1287,775,1209,778,1205,769,1287,751,1391,726,1489,710,1527,692,1553,662,1580,632,1600,602,1613,572,1620,541,1621,508,1616,475,1604,439,1586,410,1566,382,1544,335,1491,296,1432,264,1370,239,1310,221,1256,203,1181"/>
@@ -1490,7 +1606,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a799754db581681229535d434fd59e8fa_icgraph.png" border="0" usemap="#as__string_8c_a799754db581681229535d434fd59e8fa_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a799754db581681229535d434fd59e8fa_icgraph" id="as__string_8c_a799754db581681229535d434fd59e8fa_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,238,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="70,14,63,10,47,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,48,3,65,5,75,14"/>
 </map>
@@ -1521,7 +1637,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?ec
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+                             +---+
+dst:      ?                  | B |
+                             +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_aac58867e38c4fc2b9b1a2c238cd3d4cf_cgraph.png" border="0" usemap="#as__string_8c_aac58867e38c4fc2b9b1a2c238cd3d4cf_cgraph" loading="lazy" alt=""/></div>
@@ -1529,9 +1658,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,1532,113,1559"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="161,1532,253,1559"/>
 <area shape="poly" title=" " alt="" coords="113,1543,147,1544,143,1546,114,1548"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="305,772,395,799"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="305,772,395,799"/>
 <area shape="poly" title=" " alt="" coords="208,1531,341,814,346,814,213,1532"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="301,1607,399,1633"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="301,1607,399,1633"/>
 <area shape="poly" title=" " alt="" coords="235,1556,312,1599,307,1599,233,1562"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="745,1203,830,1229"/>
 <area shape="poly" title=" " alt="" coords="253,1550,344,1557,401,1557,462,1554,524,1544,585,1527,643,1502,695,1467,718,1444,737,1416,763,1355,777,1294,784,1247,787,1243,782,1295,768,1356,741,1419,722,1447,699,1471,646,1507,587,1532,525,1549,462,1559,401,1563,344,1563,254,1555"/>
@@ -1656,7 +1785,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_aac58867e38c4fc2b9b1a2c238cd3d4cf_icgraph.png" border="0" usemap="#as__string_8c_aac58867e38c4fc2b9b1a2c238cd3d4cf_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aac58867e38c4fc2b9b1a2c238cd3d4cf_icgraph" id="as__string_8c_aac58867e38c4fc2b9b1a2c238cd3d4cf_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,245,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="70,14,63,10,47,8,33,10,25,14,23,20,27,29,22,29,18,21,21,11,31,5,48,3,65,5,76,14"/>
 </map>
@@ -1687,7 +1816,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?l
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a0ca71ab838165620559a2b7dc475a843_cgraph.png" border="0" usemap="#as__string_8c_a0ca71ab838165620559a2b7dc475a843_cgraph" loading="lazy" alt=""/></div>
@@ -1702,9 +1847,9 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="662,883,684,866,711,831,733,792,764,727,767,722,738,795,715,834,688,869,665,887"/>
 <area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="867,75,960,102"/>
 <area shape="poly" title=" " alt="" coords="779,682,904,119,907,115,784,684"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="294,785,384,811"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="294,785,384,811"/>
 <area shape="poly" title=" " alt="" coords="200,1150,326,829,328,824,205,1152"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="290,1163,388,1190"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="290,1163,388,1190"/>
 <area shape="poly" title=" " alt="" coords="241,1166,277,1170,272,1173,244,1171"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="734,1165,819,1191"/>
 <area shape="poly" title=" " alt="" coords="200,1176,222,1254,240,1308,265,1368,296,1429,335,1488,382,1540,409,1562,438,1581,473,1599,506,1611,537,1616,567,1615,596,1608,626,1595,655,1575,684,1550,701,1525,717,1487,742,1390,760,1287,771,1209,774,1205,765,1287,747,1391,722,1489,706,1527,688,1553,658,1580,628,1600,598,1613,568,1620,537,1621,504,1616,471,1604,435,1586,406,1566,378,1544,331,1491,292,1432,260,1370,235,1310,217,1256,199,1181"/>
@@ -1824,7 +1969,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a0ca71ab838165620559a2b7dc475a843_icgraph.png" border="0" usemap="#as__string_8c_a0ca71ab838165620559a2b7dc475a843_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a0ca71ab838165620559a2b7dc475a843_icgraph" id="as__string_8c_a0ca71ab838165620559a2b7dc475a843_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,234,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,62,10,47,8,34,10,26,14,24,20,28,29,23,29,19,21,22,11,32,5,48,3,65,5,75,14"/>
 </map>
@@ -1855,7 +2000,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_extract_?l?
+--------------------------------------------------------------------------------
+            ss                       ss               ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a3c3f10c06cb319c048af775f2539f579_cgraph.png" border="0" usemap="#as__string_8c_a3c3f10c06cb319c048af775f2539f579_cgraph" loading="lazy" alt=""/></div>
@@ -1863,9 +2024,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,1532,109,1559"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="157,1532,249,1559"/>
 <area shape="poly" title=" " alt="" coords="109,1543,143,1544,138,1546,110,1548"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="301,772,391,799"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="301,772,391,799"/>
 <area shape="poly" title=" " alt="" coords="204,1531,337,814,342,814,209,1532"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="297,1607,395,1633"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="297,1607,395,1633"/>
 <area shape="poly" title=" " alt="" coords="231,1556,308,1599,303,1599,229,1562"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="741,1203,826,1229"/>
 <area shape="poly" title=" " alt="" coords="249,1550,340,1557,397,1557,458,1554,520,1544,581,1527,639,1502,691,1467,714,1444,733,1416,759,1355,773,1294,780,1247,783,1243,778,1295,764,1356,737,1419,718,1447,695,1471,642,1507,583,1532,521,1549,458,1559,397,1563,340,1563,250,1555"/>
@@ -1990,7 +2151,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a3c3f10c06cb319c048af775f2539f579_icgraph.png" border="0" usemap="#as__string_8c_a3c3f10c06cb319c048af775f2539f579_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a3c3f10c06cb319c048af775f2539f579_icgraph" id="as__string_8c_a3c3f10c06cb319c048af775f2539f579_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,241,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="70,14,63,10,47,8,33,10,25,14,24,20,28,29,22,29,18,21,21,11,31,5,48,3,65,5,75,14"/>
 </map>
@@ -2026,14 +2187,26 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_fill_l tested OK! </p>
+<pre>
+s_fill_l
+--------------------------------------------------------------------------------
+src:    'c'
+
+            +----len----+       =&gt;           +----len----+
+        +---+-----------+---+            +---+----   ----+---+    ds = dststart
+dst:    | A |     B     | D |            | A |cccc...cccc| D |
+        +---+-----------+---+            +---+----   ----+---+
+            ds                               ds
+
+--------------------------------------------------------------------------------
+</pre><p> s_fill_l tested OK! </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a9851c2b0e40fe26f510115b65631dcde_icgraph.png" border="0" usemap="#as__string_8c_a9851c2b0e40fe26f510115b65631dcde_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a9851c2b0e40fe26f510115b65631dcde_icgraph" id="as__string_8c_a9851c2b0e40fe26f510115b65631dcde_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,194,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="65,14,59,10,46,8,35,10,29,14,27,20,30,29,25,29,22,20,24,11,33,5,47,3,61,5,70,14"/>
 </map>
@@ -2069,13 +2242,27 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_fill_lc
+--------------------------------------------------------------------------------
+        +---+                            +---+
+src:    | A |                            | A |
+        +---+                            +---+
+                                 =&gt;
+            +----len----+                    +----len----+
+        +---+-----------+---+            +---+---+   +---+---+   ds = dststart
+dst:    | C |     D     | E |            | C | A |...| A | E |
+        +---+-----------+---+            +---+---+   +---+---+
+            ds                               ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_afb7c2bdc227cbd838980c4bf17bddab9_icgraph.png" border="0" usemap="#as__string_8c_afb7c2bdc227cbd838980c4bf17bddab9_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_afb7c2bdc227cbd838980c4bf17bddab9_icgraph" id="as__string_8c_afb7c2bdc227cbd838980c4bf17bddab9_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,201,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="65,14,59,10,46,8,34,10,28,14,26,20,30,29,24,29,21,20,24,11,32,5,47,3,62,5,71,14"/>
 </map>
@@ -2116,7 +2303,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_fill_ls
+--------------------------------------------------------------------------------
+            ss                               ss                  ss = srcstart
+        +---+---+                        +---+---+
+src:    | A | B |                        | A | B |
+        +---+---+                        +---+---+
+                                 =&gt;
+            +----len----+                    +----len----+
+        +---+-----------+---+            +---+---+   +---+---+   ds = dststart
+dst:    | C |     D     | E |            | C | B |...| B | E |
+        +---+-----------+---+            +---+---+   +---+---+
+            ds                               ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_aa078479ccc69bdac2a159f1de76781d3_cgraph.png" border="0" usemap="#as__string_8c_aa078479ccc69bdac2a159f1de76781d3_cgraph" loading="lazy" alt=""/></div>
@@ -2137,7 +2339,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_aa078479ccc69bdac2a159f1de76781d3_icgraph.png" border="0" usemap="#as__string_8c_aa078479ccc69bdac2a159f1de76781d3_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aa078479ccc69bdac2a159f1de76781d3_icgraph" id="as__string_8c_aa078479ccc69bdac2a159f1de76781d3_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,201,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="65,14,59,10,46,8,34,10,28,14,26,20,30,29,24,29,21,20,24,11,32,5,47,3,62,5,71,14"/>
 </map>
@@ -2183,7 +2385,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_insert_l
+--------------------------------------------------------------------------------
+            ss                       ss                   ss = srcstart
+        +---+-------+---+        +---+-------+---+        se = srcend
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                     +--len--+
+        +---+---+                +---+-------+---+        ds = dststart
+dst:    | D | E |                | D |   B   | E |
+        +---+---+                +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a61a5665aab837f0f132754ad8a535b3d_cgraph.png" border="0" usemap="#as__string_8c_a61a5665aab837f0f132754ad8a535b3d_cgraph" loading="lazy" alt=""/></div>
@@ -2205,7 +2423,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a61a5665aab837f0f132754ad8a535b3d_icgraph.png" border="0" usemap="#as__string_8c_a61a5665aab837f0f132754ad8a535b3d_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a61a5665aab837f0f132754ad8a535b3d_icgraph" id="as__string_8c_a61a5665aab837f0f132754ad8a535b3d_icgraph">
 <area shape="rect" title=" " alt="" coords="135,29,212,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#af374341f1c356f4542dab2add5843a07" title=" " alt="" coords="5,29,87,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#af374341f1c356f4542dab2add5843a07" title=" " alt="" coords="5,29,87,56"/>
 <area shape="poly" title=" " alt="" coords="116,43,87,45,87,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,33,10,27,14,25,20,28,29,23,29,20,21,22,11,31,5,46,3,62,5,71,14"/>
 </map>
@@ -2233,7 +2451,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a93a7e966f6a600af0f88b7a92da8d3bd_icgraph.png" border="0" usemap="#as__string_8c_a93a7e966f6a600af0f88b7a92da8d3bd_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a93a7e966f6a600af0f88b7a92da8d3bd_icgraph" id="as__string_8c_a93a7e966f6a600af0f88b7a92da8d3bd_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,511,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,369,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -2248,7 +2466,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -2284,8 +2502,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_ltrim_c Tested OK!!! </p>
-<div class="dynheader">
+<pre>
+s_ltrim_c
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+            st                                 st
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_af71a829cd1c65e705fe300744fcd4ab4_cgraph.png" border="0" usemap="#as__string_8c_af71a829cd1c65e705fe300744fcd4ab4_cgraph" loading="lazy" alt=""/></div>
@@ -2303,7 +2532,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_af71a829cd1c65e705fe300744fcd4ab4_icgraph.png" border="0" usemap="#as__string_8c_af71a829cd1c65e705fe300744fcd4ab4_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_af71a829cd1c65e705fe300744fcd4ab4_icgraph" id="as__string_8c_af71a829cd1c65e705fe300744fcd4ab4_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,212,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,47,8,35,10,28,14,26,20,30,29,25,29,21,21,24,11,33,5,48,3,63,5,73,14"/>
 </map>
@@ -2339,8 +2568,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_ltrim Tested OK!!! </p>
-<div class="dynheader">
+<pre>
+s_ltrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+            st                                 st
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_abe64ec81510940dd1714e049b46f6b12_cgraph.png" border="0" usemap="#as__string_8c_abe64ec81510940dd1714e049b46f6b12_cgraph" loading="lazy" alt=""/></div>
@@ -2361,9 +2601,157 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_abe64ec81510940dd1714e049b46f6b12_icgraph.png" border="0" usemap="#as__string_8c_abe64ec81510940dd1714e049b46f6b12_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_abe64ec81510940dd1714e049b46f6b12_icgraph" id="as__string_8c_abe64ec81510940dd1714e049b46f6b12_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,212,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,47,8,35,10,28,14,26,20,30,29,25,29,21,21,24,11,33,5,48,3,63,5,73,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3ae449da69dd9b02414c270af55a0f5c" name="a3ae449da69dd9b02414c270af55a0f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae449da69dd9b02414c270af55a0f5c">&#9670;&#160;</a></span>s_remove_ce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t s_remove_ce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *restrict</td>          <td class="paramname"><span class="paramname"><em>delim</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes characters of an s_string. </p>
+<pre>
+s_remove_ce
+--------------------------------------------------------------------------------
+charset:    " *-,."
+
+        +----------------------------------+        +--------------------------+    s  = start
+str:    |+Some Text. More Text, *1234*XYZD*|    =&gt;  |+SomeTextMoreText1234XYZD*|    e  = end
+        +---+--------------------------+---+        +---+----------------------+
+            s                          e                s
+
+--------------------------------------------------------------------------------
+</pre><pre class="fragment">           Removes all characters from the s_string \a 'str' that belong to
+           the set defined by s_string \a 'delim', between index 'start' and
+           \a 'end', inclusive.
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Pointer to the s_string that will have characters removed.</td></tr>
+    <tr><td class="paramname">start</td><td>The index in <em class="arg">'str'</em> of the first character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">end</td><td>The index in <em class="arg">'str'</em> of the last character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">delim</td><td>s_string with the set of characters that are to be removed from <em class="arg">'str'</em>. If <em class="arg">'delim'</em> is NULL, the characters to be removed are those recognized by the function <em class="arg">'isspace'</em>.</td></tr>
+    <tr><td class="paramname">delimstart</td><td>Index of the first character of <em class="arg">'delim'</em> that belongs to the set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were removed or a negative value in case of error. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="s__string_8c_a3ae449da69dd9b02414c270af55a0f5c_cgraph.png" border="0" usemap="#as__string_8c_a3ae449da69dd9b02414c270af55a0f5c_cgraph" loading="lazy" alt=""/></div>
+<map name="as__string_8c_a3ae449da69dd9b02414c270af55a0f5c_cgraph" id="as__string_8c_a3ae449da69dd9b02414c270af55a0f5c_cgraph">
+<area shape="rect" title="Removes characters of an s_string." alt="" coords="5,5,105,32"/>
+<area shape="rect" href="s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="153,5,220,32"/>
+<area shape="poly" title=" " alt="" coords="105,16,140,18,134,19,105,21"/>
+<area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="268,5,360,32"/>
+<area shape="poly" title=" " alt="" coords="220,16,255,19,250,19,221,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3020a24718fb5faa58b454255c57eeb3" name="a3020a24718fb5faa58b454255c57eeb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3020a24718fb5faa58b454255c57eeb3">&#9670;&#160;</a></span>s_remove_se()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t s_remove_se </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="s__string_8h.html#a43f20bc95cdaf8be6e4414d25763819e">s_string_t</a> *restrict</td>          <td class="paramname"><span class="paramname"><em>delim</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t</td>          <td class="paramname"><span class="paramname"><em>delimstart</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes characters of an s_string. </p>
+<pre>
+s_remove_se
+--------------------------------------------------------------------------------
+charset:    " *-,."
+
+        +----------------------------------+        +--------------------------+    s  = start
+str:    |+Some Text. More Text, *1234*XYZD*|    =&gt;  |+SomeTextMoreText1234XYZD*|    e  = end
+        +---+--------------------------+---+        +---+----------------------+
+            s                          e                s
+
+--------------------------------------------------------------------------------
+</pre><pre class="fragment">           Removes all characters from the s_string \a 'str' that belong to
+           the set defined by s_string \a 'delim', between index 'start' and
+           \a 'end', inclusive.
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Pointer to the s_string that will have characters removed.</td></tr>
+    <tr><td class="paramname">start</td><td>The index in <em class="arg">'str'</em> of the first character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">end</td><td>The index in <em class="arg">'str'</em> of the last character of the segment that will have its characters removed.</td></tr>
+    <tr><td class="paramname">delim</td><td>s_string with the set of characters that are to be removed from <em class="arg">'str'</em>. If <em class="arg">'delim'</em> is NULL, the characters to be removed are those recognized by the function <em class="arg">'isspace'</em>.</td></tr>
+    <tr><td class="paramname">delimstart</td><td>Index of the first character of <em class="arg">'delim'</em> that belongs to the set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters of <em class="arg">'str'</em> that were removed or a negative value in case of error. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="s__string_8c_a3020a24718fb5faa58b454255c57eeb3_cgraph.png" border="0" usemap="#as__string_8c_a3020a24718fb5faa58b454255c57eeb3_cgraph" loading="lazy" alt=""/></div>
+<map name="as__string_8c_a3020a24718fb5faa58b454255c57eeb3_cgraph" id="as__string_8c_a3020a24718fb5faa58b454255c57eeb3_cgraph">
+<area shape="rect" title="Removes characters of an s_string." alt="" coords="5,31,105,57"/>
+<area shape="rect" href="s__string_8c.html#a53fd1fdf21d9bb60101c74e35e77dccc" title=" " alt="" coords="153,5,242,32"/>
+<area shape="poly" title=" " alt="" coords="105,33,140,29,135,30,106,38"/>
+<area shape="rect" href="s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="290,31,357,57"/>
+<area shape="poly" title=" " alt="" coords="105,41,274,41,274,47,105,47"/>
+<area shape="poly" title=" " alt="" coords="243,25,277,34,272,34,242,30"/>
+<area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="405,31,498,57"/>
+<area shape="poly" title=" " alt="" coords="358,41,392,44,387,44,358,47"/>
 </map>
 </div>
 
@@ -2407,7 +2795,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_replace_de tested OK! </p>
+<pre>
+s_replace_e
+--------------------------------------------------------------------------------
+            ss                   ss               ss = srcstart
+        +---+---+---+        +---+---+---+
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | D | E | F |        | D | B | F |        de = dstend
+        +---+---+---+        +---+---+---+
+            ds  de               ds  de
+
+--------------------------------------------------------------------------------
+</pre><p> s_replace_de tested OK! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2430,7 +2832,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a3fe1675e4627cfcef8c92ff5babd8012_icgraph.png" border="0" usemap="#as__string_8c_a3fe1675e4627cfcef8c92ff5babd8012_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a3fe1675e4627cfcef8c92ff5babd8012_icgraph" id="as__string_8c_a3fe1675e4627cfcef8c92ff5babd8012_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,236,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,63,10,47,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,32,5,48,3,65,5,75,14"/>
 </map>
@@ -2471,7 +2873,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace*
+--------------------------------------------------------------------------------
+        +---+---+            +---+---+
+src:    | A | B |            | A | B |
+        +---+---+            +---+---+
+                             +---+     &lt;- de - ds + 1
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | C | D | E |        | C | A | E |        de = dstend
+        +---+---+---+        +---+---+---+
+            ds  de               ds  de
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_ab77110c2e86901bb7b8f5650e126e907_cgraph.png" border="0" usemap="#as__string_8c_ab77110c2e86901bb7b8f5650e126e907_cgraph" loading="lazy" alt=""/></div>
@@ -2490,7 +2906,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ab77110c2e86901bb7b8f5650e126e907_icgraph.png" border="0" usemap="#as__string_8c_ab77110c2e86901bb7b8f5650e126e907_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ab77110c2e86901bb7b8f5650e126e907_icgraph" id="as__string_8c_ab77110c2e86901bb7b8f5650e126e907_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,236,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,63,10,47,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,32,5,48,3,65,5,75,14"/>
 </map>
@@ -2536,7 +2952,25 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace_l
+--------------------------------------------------------------------------------
+            ss                       ss                   ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+
+                            =&gt;
+
+            +--len--+                +--len--+
+        +---+-------+---+        +---+-------+---+        ds = dststart
+dst:    | D |   E   | F |        | D |   B   | F |
+        +---+-------+---+        +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_ae532c0c345bbde54717565eb35780ddd_cgraph.png" border="0" usemap="#as__string_8c_ae532c0c345bbde54717565eb35780ddd_cgraph" loading="lazy" alt=""/></div>
@@ -2558,7 +2992,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ae532c0c345bbde54717565eb35780ddd_icgraph.png" border="0" usemap="#as__string_8c_ae532c0c345bbde54717565eb35780ddd_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ae532c0c345bbde54717565eb35780ddd_icgraph" id="as__string_8c_ae532c0c345bbde54717565eb35780ddd_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,225,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,124,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,62,10,47,8,34,10,27,14,25,20,29,29,24,29,20,21,23,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -2599,7 +3033,24 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace_lc
+--------------------------------------------------------------------------------
+        +-------+---+            +-------+---+
+src:    |   A   | B |            |   A   | B |
+        +-------+---+            +-------+---+
+        +--len--+                +--len--+
+
+                            =&gt;
+
+            +--len--+                +--len--+
+        +---+-------+---+        +---+-------+---+        ds = dststart
+dst:    | C |   D   | E |        | C |   A   | E |
+        +---+-------+---+        +---+-------+---+
+            ds                       ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_aac1c107987a873af158a59de4c0cbae6_cgraph.png" border="0" usemap="#as__string_8c_aac1c107987a873af158a59de4c0cbae6_cgraph" loading="lazy" alt=""/></div>
@@ -2618,7 +3069,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_aac1c107987a873af158a59de4c0cbae6_icgraph.png" border="0" usemap="#as__string_8c_aac1c107987a873af158a59de4c0cbae6_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aac1c107987a873af158a59de4c0cbae6_icgraph" id="as__string_8c_aac1c107987a873af158a59de4c0cbae6_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,232,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,62,10,47,8,34,10,26,14,24,20,28,29,23,29,19,21,22,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -2664,7 +3115,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_replace_se
+--------------------------------------------------------------------------------
+            ss  se               ss  se           ss = srcstart
+        +---+---+---+        +---+---+---+        se = srcend
+src:    | A | B | C |        | A | B | C |
+        +---+---+---+        +---+---+---+
+                        =&gt;
+        +---+---+---+        +---+---+---+        ds = dststart
+dst:    | D | E | F |        | D | B | F |
+        +---+---+---+        +---+---+---+
+            ds                   ds
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a8268f579d6269e410f86e208728f02b7_cgraph.png" border="0" usemap="#as__string_8c_a8268f579d6269e410f86e208728f02b7_cgraph" loading="lazy" alt=""/></div>
@@ -2686,7 +3151,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a8268f579d6269e410f86e208728f02b7_icgraph.png" border="0" usemap="#as__string_8c_a8268f579d6269e410f86e208728f02b7_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a8268f579d6269e410f86e208728f02b7_icgraph" id="as__string_8c_a8268f579d6269e410f86e208728f02b7_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,236,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="120,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="69,14,63,10,47,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,32,5,48,3,65,5,75,14"/>
 </map>
@@ -2717,7 +3182,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_rtrim_c Tested OK!!! </p>
+<pre>
+s_rtrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+                  st                           st
+
+--------------------------------------------------------------------------------
+</pre><p> s_rtrim_c Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2736,7 +3213,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a6c50d2a3b143fe2a4f5a04bc31648337_icgraph.png" border="0" usemap="#as__string_8c_a6c50d2a3b143fe2a4f5a04bc31648337_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a6c50d2a3b143fe2a4f5a04bc31648337_icgraph" id="as__string_8c_a6c50d2a3b143fe2a4f5a04bc31648337_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,213,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,47,8,35,10,28,14,26,20,30,29,25,29,21,21,24,11,33,5,48,3,63,5,73,14"/>
 </map>
@@ -2772,7 +3249,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>s_rtrim Tested OK!!! </p>
+<pre>
+s_rtrim
+--------------------------------------------------------------------------------
+charset: x..z
+
+
+        +---+-----+---+                    +---+---+    st = start
+str:    | A | cs* | B |                =&gt;  | A | B |    cs*= characters from charset
+        +---+-----+---+                    +---+---+
+                  st                           st
+
+--------------------------------------------------------------------------------
+</pre><p> s_rtrim Tested OK!!! </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2794,7 +3283,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a09eba09a33acdf448266d91a29e51b9b_icgraph.png" border="0" usemap="#as__string_8c_a09eba09a33acdf448266d91a29e51b9b_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a09eba09a33acdf448266d91a29e51b9b_icgraph" id="as__string_8c_a09eba09a33acdf448266d91a29e51b9b_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,213,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,47,8,35,10,28,14,26,20,30,29,25,29,21,21,24,11,33,5,48,3,63,5,73,14"/>
 </map>
@@ -2849,7 +3338,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a75248a1d297d4e0272181fc1ae1adf6f_icgraph.png" border="0" usemap="#as__string_8c_a75248a1d297d4e0272181fc1ae1adf6f_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a75248a1d297d4e0272181fc1ae1adf6f_icgraph" id="as__string_8c_a75248a1d297d4e0272181fc1ae1adf6f_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,506,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,299,131,295,123,298,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -2864,7 +3353,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -2937,7 +3426,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ad468f1874e80c45cd6f48cc408c769de_icgraph.png" border="0" usemap="#as__string_8c_ad468f1874e80c45cd6f48cc408c769de_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ad468f1874e80c45cd6f48cc408c769de_icgraph" id="as__string_8c_ad468f1874e80c45cd6f48cc408c769de_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,207,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,34,10,27,14,26,20,29,29,24,29,20,21,23,11,32,5,47,3,62,5,71,14"/>
 </map>
@@ -2997,7 +3486,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_af97bf3129b6e010581aff643ac004b9d_icgraph.png" border="0" usemap="#as__string_8c_af97bf3129b6e010581aff643ac004b9d_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_af97bf3129b6e010581aff643ac004b9d_icgraph" id="as__string_8c_af97bf3129b6e010581aff643ac004b9d_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,221,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,46,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,47,3,63,5,72,14"/>
 </map>
@@ -3028,7 +3517,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcat
+--------------------------------------------------------------------------------
+            ss                   ss                ss = srcstart
+        +---+---+            +---+---+
+src:    | A | B |            | A | B |
+        +---+---+            +---+---+
+                    =&gt;
+        +---+                +---+---+
+dst:    | C |                | C | B |
+        +---+                +---+---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a2e618f54262f2b39de2e9719e07c4708_cgraph.png" border="0" usemap="#as__string_8c_a2e618f54262f2b39de2e9719e07c4708_cgraph" loading="lazy" alt=""/></div>
@@ -3050,7 +3552,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a2e618f54262f2b39de2e9719e07c4708_icgraph.png" border="0" usemap="#as__string_8c_a2e618f54262f2b39de2e9719e07c4708_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a2e618f54262f2b39de2e9719e07c4708_icgraph" id="as__string_8c_a2e618f54262f2b39de2e9719e07c4708_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,204,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,34,10,28,14,26,20,30,29,24,29,21,20,23,11,32,5,47,3,62,5,71,14"/>
 </map>
@@ -3076,7 +3578,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcat_c
+--------------------------------------------------------------------------------
+        +---+                +---+
+src:    | A |                | A |
+        +---+                +---+
+                    =&gt;
+        +---+                +---+---+
+dst:    | C |                | C | A |
+        +---+                +---+---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a3517077f0ff17bd04c01c8199dc0e136_cgraph.png" border="0" usemap="#as__string_8c_a3517077f0ff17bd04c01c8199dc0e136_cgraph" loading="lazy" alt=""/></div>
@@ -3095,7 +3609,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a3517077f0ff17bd04c01c8199dc0e136_icgraph.png" border="0" usemap="#as__string_8c_a3517077f0ff17bd04c01c8199dc0e136_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a3517077f0ff17bd04c01c8199dc0e136_icgraph" id="as__string_8c_a3517077f0ff17bd04c01c8199dc0e136_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,218,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,60,10,46,8,33,10,26,14,25,20,28,29,23,29,19,21,22,11,32,5,47,3,63,5,72,14"/>
 </map>
@@ -3148,7 +3662,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a0695e8a61367fde13f79ce35d4631284_icgraph.png" border="0" usemap="#as__string_8c_a0695e8a61367fde13f79ce35d4631284_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a0695e8a61367fde13f79ce35d4631284_icgraph" id="as__string_8c_a0695e8a61367fde13f79ce35d4631284_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,485,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="343,117,337,113,323,111,310,113,304,117,302,123,305,132,300,131,297,123,299,114,308,108,323,105,339,108,348,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -3163,7 +3677,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -3225,7 +3739,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ab874114f29cd00b2254242cefeb37cd9_icgraph.png" border="0" usemap="#as__string_8c_ab874114f29cd00b2254242cefeb37cd9_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ab874114f29cd00b2254242cefeb37cd9_icgraph" id="as__string_8c_ab874114f29cd00b2254242cefeb37cd9_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,492,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,369,143,404,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,337,113,323,111,310,113,303,117,301,123,305,132,300,131,296,123,299,114,308,108,323,105,339,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -3240,7 +3754,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -3297,7 +3811,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a65c591e0de0c76b56dfe3f28670b80fe_icgraph.png" border="0" usemap="#as__string_8c_a65c591e0de0c76b56dfe3f28670b80fe_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a65c591e0de0c76b56dfe3f28670b80fe_icgraph" id="as__string_8c_a65c591e0de0c76b56dfe3f28670b80fe_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,506,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,299,131,295,123,298,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -3312,7 +3826,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -3374,7 +3888,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a7b56e133708b65b3912ef498c006fc1a_icgraph.png" border="0" usemap="#as__string_8c_a7b56e133708b65b3912ef498c006fc1a_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a7b56e133708b65b3912ef498c006fc1a_icgraph" id="as__string_8c_a7b56e133708b65b3912ef498c006fc1a_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,218,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,60,10,46,8,33,10,26,14,25,20,28,29,23,29,19,21,22,11,32,5,47,3,63,5,72,14"/>
 </map>
@@ -3426,7 +3940,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a924176652eb0608d64f1867cb639afcf_icgraph.png" border="0" usemap="#as__string_8c_a924176652eb0608d64f1867cb639afcf_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a924176652eb0608d64f1867cb639afcf_icgraph" id="as__string_8c_a924176652eb0608d64f1867cb639afcf_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,232,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,61,10,46,8,33,10,25,14,23,20,27,29,22,29,18,21,21,11,31,5,47,3,63,5,73,14"/>
 </map>
@@ -3457,7 +3971,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcpy
+--------------------------------------------------------------------------------
+            ss               ss                ss = srcstart
+        +---+---+        +---+---+
+src:    | A | B |        | A | B |
+        +---+---+        +---+---+
+                    =&gt;
+                         +---+
+dst:      ?              | B |
+                         +---+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a11dca010d32f6458b0bd2ce8af4f1ab2_cgraph.png" border="0" usemap="#as__string_8c_a11dca010d32f6458b0bd2ce8af4f1ab2_cgraph" loading="lazy" alt=""/></div>
@@ -3479,7 +4005,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a11dca010d32f6458b0bd2ce8af4f1ab2_icgraph.png" border="0" usemap="#as__string_8c_a11dca010d32f6458b0bd2ce8af4f1ab2_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a11dca010d32f6458b0bd2ce8af4f1ab2_icgraph" id="as__string_8c_a11dca010d32f6458b0bd2ce8af4f1ab2_icgraph">
 <area shape="rect" title=" " alt="" coords="268,105,339,132"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="138,29,220,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="138,29,220,56"/>
 <area shape="poly" title=" " alt="" coords="264,97,202,59,203,54,270,96"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="143,80,214,107"/>
 <area shape="poly" title=" " alt="" coords="250,109,215,103,215,98,255,108"/>
@@ -3488,7 +4014,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="s__string_8c.html#aad3bce8c8e3db8900bc075f564793e3e" title=" " alt="" coords="140,181,218,208"/>
 <area shape="poly" title=" " alt="" coords="270,140,204,183,201,178,264,141"/>
 <area shape="poly" title=" " alt="" coords="198,14,192,10,179,8,166,10,160,14,158,20,162,29,156,29,153,21,155,11,164,5,179,3,194,5,204,14"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,131,90,157"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,131,90,157"/>
 <area shape="poly" title=" " alt="" coords="126,114,85,132,83,128,130,111"/>
 <area shape="poly" title=" " alt="" coords="68,116,62,112,47,109,34,111,27,116,26,122,29,130,24,131,20,122,23,113,32,106,48,104,64,107,73,115"/>
 <area shape="poly" title=" " alt="" coords="124,145,91,147,90,141,129,143"/>
@@ -3516,7 +4042,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strcpy_c
+--------------------------------------------------------------------------------
+        +---+            +---+
+src:    | A |            | A |
+        +---+            +---+
+                    =&gt;
+                         +---+
+dst:      ?              | A |
+                         +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_ad6674b3b7d5474402da49e3c160cf7e1_cgraph.png" border="0" usemap="#as__string_8c_ad6674b3b7d5474402da49e3c160cf7e1_cgraph" loading="lazy" alt=""/></div>
@@ -3532,7 +4070,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ad6674b3b7d5474402da49e3c160cf7e1_icgraph.png" border="0" usemap="#as__string_8c_ad6674b3b7d5474402da49e3c160cf7e1_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ad6674b3b7d5474402da49e3c160cf7e1_icgraph" id="as__string_8c_ad6674b3b7d5474402da49e3c160cf7e1_icgraph">
 <area shape="rect" title=" " alt="" coords="282,207,367,233"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="145,29,227,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="145,29,227,56"/>
 <area shape="poly" title=" " alt="" coords="310,192,280,133,258,100,232,70,219,59,218,54,236,66,262,96,284,130,315,193"/>
 <area shape="rect" href="s__string_8c.html#a199110a9f1fb62576398bbe3a6bd1845" title=" " alt="" coords="141,80,230,107"/>
 <area shape="poly" title=" " alt="" coords="302,194,271,158,232,121,217,110,216,104,236,117,275,154,307,194"/>
@@ -3549,7 +4087,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="140,384,232,411"/>
 <area shape="poly" title=" " alt="" coords="315,246,284,310,262,344,236,374,220,386,217,381,232,370,258,340,280,307,310,249"/>
 <area shape="poly" title=" " alt="" coords="208,15,201,10,186,8,172,10,164,14,163,20,167,29,161,29,157,21,160,11,170,5,186,3,203,5,213,13"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,232,90,259"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,232,90,259"/>
 <area shape="poly" title=" " alt="" coords="140,118,139,121,113,149,89,180,58,233,53,230,85,177,108,145,136,117,143,113"/>
 <area shape="poly" title=" " alt="" coords="69,218,62,213,47,211,34,213,26,217,24,223,28,231,23,232,19,223,22,214,32,208,48,205,65,208,74,216"/>
 <area shape="poly" title=" " alt="" coords="142,167,139,172,98,204,65,233,61,230,95,200,136,167,146,163"/>
@@ -3612,7 +4150,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a9dd6b00897d15ce9cd07bac897841740_icgraph.png" border="0" usemap="#as__string_8c_a9dd6b00897d15ce9cd07bac897841740_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a9dd6b00897d15ce9cd07bac897841740_icgraph" id="as__string_8c_a9dd6b00897d15ce9cd07bac897841740_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,214,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,60,10,46,8,34,10,27,14,25,20,29,29,23,29,20,21,23,11,32,5,47,3,62,5,72,14"/>
 </map>
@@ -3664,7 +4202,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a9777866ea81e6cf69ef3b842b9978f2c_icgraph.png" border="0" usemap="#as__string_8c_a9777866ea81e6cf69ef3b842b9978f2c_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a9777866ea81e6cf69ef3b842b9978f2c_icgraph" id="as__string_8c_a9777866ea81e6cf69ef3b842b9978f2c_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,228,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,61,10,46,8,33,10,26,14,24,20,28,29,22,29,19,21,21,11,31,5,47,3,63,5,73,14"/>
 </map>
@@ -3696,11 +4234,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="s__string_8c_a972f2ed70daef6f4908c800d38b86236_cgraph.png" border="0" usemap="#as__string_8c_a972f2ed70daef6f4908c800d38b86236_cgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a972f2ed70daef6f4908c800d38b86236_cgraph" id="as__string_8c_a972f2ed70daef6f4908c800d38b86236_cgraph">
 <area shape="rect" title=" " alt="" coords="5,766,77,793"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="129,741,219,767"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="129,741,219,767"/>
 <area shape="poly" title=" " alt="" coords="75,771,115,763,112,767,79,774"/>
 <area shape="rect" href="s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="569,741,636,767"/>
 <area shape="poly" title=" " alt="" coords="40,765,48,656,59,572,78,476,107,374,147,272,172,222,200,175,233,131,269,91,330,39,362,20,394,8,426,3,458,6,490,19,523,43,532,57,541,81,557,152,570,246,581,354,595,571,603,726,597,724,590,572,575,355,565,247,552,153,536,83,528,60,519,46,488,24,457,12,426,8,395,13,364,25,334,43,273,94,237,134,205,178,176,225,152,274,112,375,83,477,64,573,53,657,45,766"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="125,866,223,893"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="125,866,223,893"/>
 <area shape="poly" title=" " alt="" coords="60,791,145,855,140,857,61,796"/>
 <area shape="rect" href="s__string_8c.html#a11dca010d32f6458b0bd2ce8af4f1ab2" title=" " alt="" coords="285,1526,356,1553"/>
 <area shape="poly" title=" " alt="" coords="76,776,113,778,153,785,193,801,210,813,225,828,241,854,252,887,259,926,262,969,261,1065,254,1168,247,1273,245,1370,252,1452,260,1486,273,1512,276,1518,271,1516,269,1515,255,1487,246,1453,239,1370,242,1272,249,1168,256,1064,257,969,253,926,247,889,236,857,221,831,207,817,190,806,152,790,112,783,79,780"/>
@@ -3826,7 +4364,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a972f2ed70daef6f4908c800d38b86236_icgraph.png" border="0" usemap="#as__string_8c_a972f2ed70daef6f4908c800d38b86236_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a972f2ed70daef6f4908c800d38b86236_icgraph" id="as__string_8c_a972f2ed70daef6f4908c800d38b86236_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,209,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,47,8,35,10,28,14,27,20,30,29,25,29,21,21,24,11,33,5,48,3,63,5,72,14"/>
 </map>
@@ -3854,9 +4392,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="s__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_cgraph.png" border="0" usemap="#as__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_cgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_cgraph" id="as__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_cgraph">
 <area shape="rect" title=" " alt="" coords="5,1532,91,1559"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="143,772,233,799"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="143,772,233,799"/>
 <area shape="poly" title=" " alt="" coords="49,1531,179,813,184,814,54,1532"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="139,1607,237,1633"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="139,1607,237,1633"/>
 <area shape="poly" title=" " alt="" coords="75,1556,150,1598,146,1600,74,1562"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="583,1203,668,1229"/>
 <area shape="poly" title=" " alt="" coords="91,1549,181,1557,237,1557,298,1553,361,1544,423,1528,481,1502,533,1467,556,1444,574,1416,601,1355,615,1294,621,1247,624,1243,620,1295,606,1356,579,1419,560,1447,536,1471,483,1507,424,1533,362,1549,299,1559,238,1563,181,1562,91,1555"/>
@@ -3981,7 +4519,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_icgraph.png" border="0" usemap="#as__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_icgraph" id="as__string_8c_a8926457f169b6dc28a5b2ac9f8cb69b1_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,223,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,124,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,62,10,47,8,34,10,27,14,25,20,29,29,24,29,20,21,23,11,32,5,48,3,64,5,74,14"/>
 </map>
@@ -4033,7 +4571,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_aa642b3a85bde48ecbabb131e761c0bc4_icgraph.png" border="0" usemap="#as__string_8c_aa642b3a85bde48ecbabb131e761c0bc4_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aa642b3a85bde48ecbabb131e761c0bc4_icgraph" id="as__string_8c_aa642b3a85bde48ecbabb131e761c0bc4_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,488,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="343,117,337,113,323,111,310,113,303,117,302,123,305,132,300,131,296,123,299,114,308,108,323,105,339,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -4048,7 +4586,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -4110,7 +4648,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a89ad12c0cf9d562e7a676633f53ee1ba_icgraph.png" border="0" usemap="#as__string_8c_a89ad12c0cf9d562e7a676633f53ee1ba_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a89ad12c0cf9d562e7a676633f53ee1ba_icgraph" id="as__string_8c_a89ad12c0cf9d562e7a676633f53ee1ba_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,495,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,337,113,323,111,310,113,303,117,301,123,305,132,300,131,296,123,299,114,308,108,323,105,340,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -4125,7 +4663,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -4182,7 +4720,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a3bd9fcd24ee9f029445f2b9eafd2cab8_icgraph.png" border="0" usemap="#as__string_8c_a3bd9fcd24ee9f029445f2b9eafd2cab8_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a3bd9fcd24ee9f029445f2b9eafd2cab8_icgraph" id="as__string_8c_a3bd9fcd24ee9f029445f2b9eafd2cab8_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,509,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,404,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -4197,7 +4735,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -4259,7 +4797,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_acc562a34f78604452a96fe9351019d41_icgraph.png" border="0" usemap="#as__string_8c_acc562a34f78604452a96fe9351019d41_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_acc562a34f78604452a96fe9351019d41_icgraph" id="as__string_8c_acc562a34f78604452a96fe9351019d41_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,485,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="343,117,337,113,323,111,310,113,304,117,302,123,305,132,300,131,297,123,299,114,308,108,323,105,339,108,348,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -4274,7 +4812,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -4356,7 +4894,23 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcat
+--------------------------------------------------------------------------------
+            ss                         ss                ss = srcstart
+        +---+-------+---+          +---+-------+---+
+src:    | A |   B   | C |          | A |   B   | C |
+        +---+-------+---+          +---+-------+---+
+                                       +-------+     &lt;- len - s_strlen(dst)
+
+                            =&gt;
+                                   +----len----+
+        +---+                      +---+-------+
+dst:    | D |                      | D |   B   |
+        +---+                      +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a79073c234b6ecb25aa8cc6df3752d1c8_cgraph.png" border="0" usemap="#as__string_8c_a79073c234b6ecb25aa8cc6df3752d1c8_cgraph" loading="lazy" alt=""/></div>
@@ -4378,7 +4932,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a79073c234b6ecb25aa8cc6df3752d1c8_icgraph.png" border="0" usemap="#as__string_8c_a79073c234b6ecb25aa8cc6df3752d1c8_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a79073c234b6ecb25aa8cc6df3752d1c8_icgraph" id="as__string_8c_a79073c234b6ecb25aa8cc6df3752d1c8_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,207,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,34,10,27,14,26,20,29,29,24,29,20,21,23,11,32,5,47,3,62,5,71,14"/>
 </map>
@@ -4409,7 +4963,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcat_c
+--------------------------------------------------------------------------------
+        +-------+---+              +-------+---+
+src:    |   A   | B |              |   A   | B |
+        +-------+---+              +-------+---+
+                                   +-------+     &lt;- len - s_strlen(dst)
+
+                            =&gt;
+
+        +---+ &lt;- s_strlen(dst)     +----len----+
+        +---+                      +---+-------+
+dst:    | C |                      | C |   A   |
+        +---+                      +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_aca18d82c5ee2314fe4f5e964d188ee57_cgraph.png" border="0" usemap="#as__string_8c_aca18d82c5ee2314fe4f5e964d188ee57_cgraph" loading="lazy" alt=""/></div>
@@ -4428,7 +4998,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_aca18d82c5ee2314fe4f5e964d188ee57_icgraph.png" border="0" usemap="#as__string_8c_aca18d82c5ee2314fe4f5e964d188ee57_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aca18d82c5ee2314fe4f5e964d188ee57_icgraph" id="as__string_8c_aca18d82c5ee2314fe4f5e964d188ee57_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,221,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,46,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,47,3,63,5,72,14"/>
 </map>
@@ -4464,7 +5034,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcpy
+--------------------------------------------------------------------------------
+            ss                       ss                ss = srcstart
+        +---+-------+---+        +---+-------+---+
+src:    | A |   B   | C |        | A |   B   | C |
+        +---+-------+---+        +---+-------+---+
+            +--len--+                +--len--+
+                            =&gt;
+                                 +--len--+
+                                 +-------+
+dst:      ?                      |   B   |
+                                 +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a1cfa6bc2de023953cd93d4f54e4f5f60_cgraph.png" border="0" usemap="#as__string_8c_a1cfa6bc2de023953cd93d4f54e4f5f60_cgraph" loading="lazy" alt=""/></div>
@@ -4486,12 +5071,12 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a1cfa6bc2de023953cd93d4f54e4f5f60_icgraph.png" border="0" usemap="#as__string_8c_a1cfa6bc2de023953cd93d4f54e4f5f60_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a1cfa6bc2de023953cd93d4f54e4f5f60_icgraph" id="as__string_8c_a1cfa6bc2de023953cd93d4f54e4f5f60_icgraph">
 <area shape="rect" title=" " alt="" coords="271,55,345,81"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="139,29,222,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="139,29,222,56"/>
 <area shape="poly" title=" " alt="" coords="253,58,222,53,222,48,258,57"/>
 <area shape="rect" href="s__string_8c.html#aabf07408a87c64ddf49bcac8bc118260" title=" " alt="" coords="138,80,223,107"/>
 <area shape="poly" title=" " alt="" coords="259,78,224,87,223,82,253,79"/>
 <area shape="poly" title=" " alt="" coords="200,14,194,10,180,8,168,10,161,14,159,20,163,30,157,28,154,21,156,11,166,5,180,3,196,5,206,14"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,80,90,107"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,80,90,107"/>
 <area shape="poly" title=" " alt="" coords="119,94,90,96,90,91,124,93"/>
 <area shape="poly" title=" " alt="" coords="68,65,62,61,47,59,34,61,27,65,25,71,29,79,24,80,20,71,23,62,32,56,48,53,64,56,74,65"/>
 </map>
@@ -4522,7 +5107,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strlcpy_c
+--------------------------------------------------------------------------------
+        +-------+---+        +-------+---+
+src:    |   A   | B |        |   A   | B |
+        +-------+---+        +-------+---+
+        +--len--+            +--len--+
+                        =&gt;
+                             +--len--+
+                             +-------+
+dst:        ?                |   A   |
+                             +-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a0723fbc44f02b9e936a78ca4d829ad1e_cgraph.png" border="0" usemap="#as__string_8c_a0723fbc44f02b9e936a78ca4d829ad1e_cgraph" loading="lazy" alt=""/></div>
@@ -4538,7 +5137,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a0723fbc44f02b9e936a78ca4d829ad1e_icgraph.png" border="0" usemap="#as__string_8c_a0723fbc44f02b9e936a78ca4d829ad1e_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a0723fbc44f02b9e936a78ca4d829ad1e_icgraph" id="as__string_8c_a0723fbc44f02b9e936a78ca4d829ad1e_icgraph">
 <area shape="rect" title=" " alt="" coords="282,105,370,132"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="6,29,89,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="6,29,89,56"/>
 <area shape="poly" title=" " alt="" coords="307,92,277,53,256,34,233,20,193,10,152,12,113,20,81,31,78,27,112,15,152,6,194,5,235,15,260,30,281,49,312,92"/>
 <area shape="rect" href="s__string_8c.html#a199110a9f1fb62576398bbe3a6bd1845" title=" " alt="" coords="141,131,230,157"/>
 <area shape="poly" title=" " alt="" coords="264,130,232,138,230,133,269,128"/>
@@ -4551,7 +5150,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="s__string_8c.html#a76a7484d5b9db7e0d8796325dfd04221" title=" " alt="" coords="141,80,230,107"/>
 <area shape="poly" title=" " alt="" coords="264,109,232,104,231,99,269,107"/>
 <area shape="poly" title=" " alt="" coords="69,15,62,10,47,8,34,10,26,14,24,20,28,28,23,29,19,21,22,11,32,5,48,3,65,5,74,13"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,181,90,208"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,181,90,208"/>
 <area shape="poly" title=" " alt="" coords="131,165,87,183,85,178,135,162"/>
 <area shape="poly" title=" " alt="" coords="69,167,62,162,47,160,34,162,26,166,24,172,28,180,23,181,19,173,22,163,32,157,48,155,65,157,75,165"/>
 <area shape="poly" title=" " alt="" coords="120,196,91,197,90,192,124,194"/>
@@ -4592,11 +5191,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="s__string_8c_ad3175b84cac9434b7a1b83d0673f5159_cgraph.png" border="0" usemap="#as__string_8c_ad3175b84cac9434b7a1b83d0673f5159_cgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ad3175b84cac9434b7a1b83d0673f5159_cgraph" id="as__string_8c_ad3175b84cac9434b7a1b83d0673f5159_cgraph">
 <area shape="rect" title=" " alt="" coords="5,766,80,792"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="132,740,222,767"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="132,740,222,767"/>
 <area shape="poly" title=" " alt="" coords="78,770,118,763,115,767,82,774"/>
 <area shape="rect" href="s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="572,740,639,767"/>
 <area shape="poly" title=" " alt="" coords="41,765,50,656,61,572,80,476,109,374,149,272,174,222,203,175,236,131,272,91,333,39,365,20,397,8,429,3,461,6,493,19,526,43,535,57,544,81,560,152,573,246,584,354,598,571,606,726,600,724,593,572,578,355,568,247,555,153,539,83,531,60,522,46,491,24,460,12,429,8,398,13,367,25,337,43,276,94,240,134,207,178,179,225,154,274,114,375,86,477,66,573,55,657,47,766"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="128,866,226,892"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="128,866,226,892"/>
 <area shape="poly" title=" " alt="" coords="61,791,148,855,143,857,63,796"/>
 <area shape="rect" href="s__string_8c.html#a11dca010d32f6458b0bd2ce8af4f1ab2" title=" " alt="" coords="288,1526,359,1552"/>
 <area shape="poly" title=" " alt="" coords="78,776,116,778,156,785,196,801,213,813,228,828,244,854,255,887,262,926,265,968,264,1065,258,1168,250,1273,248,1370,255,1452,263,1485,276,1512,279,1518,274,1516,272,1515,258,1487,249,1453,242,1370,245,1272,252,1168,259,1064,260,969,256,926,250,889,239,857,224,831,210,817,193,806,155,790,115,783,82,780"/>
@@ -4722,7 +5321,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ad3175b84cac9434b7a1b83d0673f5159_icgraph.png" border="0" usemap="#as__string_8c_ad3175b84cac9434b7a1b83d0673f5159_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ad3175b84cac9434b7a1b83d0673f5159_icgraph" id="as__string_8c_ad3175b84cac9434b7a1b83d0673f5159_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,212,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,47,8,35,10,28,14,26,20,30,29,25,29,21,21,24,11,33,5,48,3,63,5,73,14"/>
 </map>
@@ -4754,9 +5353,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="s__string_8c_abe34f23571f0d69284fdb3d33115514d_cgraph.png" border="0" usemap="#as__string_8c_abe34f23571f0d69284fdb3d33115514d_cgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_abe34f23571f0d69284fdb3d33115514d_cgraph" id="as__string_8c_abe34f23571f0d69284fdb3d33115514d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,1532,94,1559"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="146,772,236,799"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="146,772,236,799"/>
 <area shape="poly" title=" " alt="" coords="51,1531,182,813,187,814,56,1532"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="142,1607,240,1633"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="142,1607,240,1633"/>
 <area shape="poly" title=" " alt="" coords="77,1556,153,1598,148,1600,76,1562"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="586,1203,671,1229"/>
 <area shape="poly" title=" " alt="" coords="94,1549,185,1557,241,1557,302,1554,364,1544,426,1527,484,1502,536,1467,559,1444,577,1416,604,1355,618,1294,624,1247,627,1243,623,1295,609,1356,582,1419,563,1447,539,1471,486,1507,428,1533,365,1549,302,1559,241,1563,184,1562,94,1555"/>
@@ -4881,14 +5480,14 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_abe34f23571f0d69284fdb3d33115514d_icgraph.png" border="0" usemap="#as__string_8c_abe34f23571f0d69284fdb3d33115514d_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_abe34f23571f0d69284fdb3d33115514d_icgraph" id="as__string_8c_abe34f23571f0d69284fdb3d33115514d_icgraph">
 <area shape="rect" title=" " alt="" coords="277,80,365,107"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="140,29,224,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="140,29,224,56"/>
 <area shape="poly" title=" " alt="" coords="266,75,221,59,221,54,271,74"/>
 <area shape="rect" href="s__string_8c.html#af6e5ff03a8b5abc0f96670d261279496" title=" " alt="" coords="139,80,226,107"/>
 <area shape="poly" title=" " alt="" coords="258,94,226,96,225,91,264,93"/>
 <area shape="rect" href="s__string_8c.html#ab2e911d5e0c85efdfe520b92bcf1d677" title=" " alt="" coords="136,131,229,157"/>
 <area shape="poly" title=" " alt="" coords="271,112,222,133,220,128,266,113"/>
 <area shape="poly" title=" " alt="" coords="204,14,197,10,182,8,169,10,161,14,160,20,163,29,158,28,154,21,157,11,167,5,182,3,199,5,209,14"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,105,88,132"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,105,88,132"/>
 <area shape="poly" title=" " alt="" coords="122,105,89,114,88,108,126,103"/>
 <area shape="poly" title=" " alt="" coords="68,91,61,86,46,84,33,86,26,90,24,96,28,105,22,105,18,97,21,87,31,81,47,79,63,81,73,90"/>
 <area shape="poly" title=" " alt="" coords="118,133,88,129,88,124,123,132"/>
@@ -4960,7 +5559,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_add13869d1d9809e7c9aed81e816e93a3_icgraph.png" border="0" usemap="#as__string_8c_add13869d1d9809e7c9aed81e816e93a3_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_add13869d1d9809e7c9aed81e816e93a3_icgraph" id="as__string_8c_add13869d1d9809e7c9aed81e816e93a3_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,487,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="343,117,337,113,323,111,310,113,303,117,302,123,305,132,300,131,296,123,299,114,308,108,323,105,339,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -4975,7 +5574,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -5029,7 +5628,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a03a5844ce71b47f4937105acdf7f64cf_icgraph.png" border="0" usemap="#as__string_8c_a03a5844ce71b47f4937105acdf7f64cf_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a03a5844ce71b47f4937105acdf7f64cf_icgraph" id="as__string_8c_a03a5844ce71b47f4937105acdf7f64cf_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,219,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,62,10,47,8,34,10,27,14,26,20,29,29,24,29,20,21,23,11,32,5,48,3,64,5,73,14"/>
 </map>
@@ -5078,7 +5677,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ab529f5b780755ea0b8ce9133ec0f4586_icgraph.png" border="0" usemap="#as__string_8c_ab529f5b780755ea0b8ce9133ec0f4586_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ab529f5b780755ea0b8ce9133ec0f4586_icgraph" id="as__string_8c_ab529f5b780755ea0b8ce9133ec0f4586_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,215,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,61,10,47,8,35,10,28,14,26,20,30,29,24,29,21,21,23,11,33,5,48,3,63,5,73,14"/>
 </map>
@@ -5106,7 +5705,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a7c00fdfc8f5e5f966ea79f37531f1e27_icgraph.png" border="0" usemap="#as__string_8c_a7c00fdfc8f5e5f966ea79f37531f1e27_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a7c00fdfc8f5e5f966ea79f37531f1e27_icgraph" id="as__string_8c_a7c00fdfc8f5e5f966ea79f37531f1e27_icgraph">
 <area shape="rect" title=" " alt="" coords="577,639,669,665"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="286,195,376,221"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="286,195,376,221"/>
 <area shape="poly" title=" " alt="" coords="618,622,611,526,595,396,583,332,568,274,549,228,527,198,509,187,489,180,445,177,402,185,366,196,363,192,401,180,445,172,490,175,511,182,530,194,554,225,573,272,588,330,600,395,616,525,623,624"/>
 <area shape="rect" href="s__string_8c.html#a45b1ee77c4f918067a1675778ce1f68e" title=" " alt="" coords="426,208,529,235"/>
 <area shape="poly" title=" " alt="" coords="616,623,604,539,584,427,558,320,543,278,527,248,516,238,515,232,531,245,548,276,563,318,590,426,609,538,621,624"/>
@@ -5163,7 +5762,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="307,183,282,147,268,117,261,93,252,70,234,46,222,35,220,30,238,42,257,68,266,91,273,116,286,144,312,182"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="141,56,233,83"/>
 <area shape="poly" title=" " alt="" coords="308,183,269,134,234,97,220,86,218,81,238,93,273,131,313,181"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,284,90,311"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,284,90,311"/>
 <area shape="poly" title=" " alt="" coords="140,144,140,147,110,182,86,220,56,284,51,283,81,218,106,179,136,143,143,140"/>
 <area shape="poly" title=" " alt="" coords="70,270,63,265,47,263,33,265,26,269,24,275,28,283,23,284,19,275,22,266,32,260,48,257,65,260,75,268"/>
 <area shape="poly" title=" " alt="" coords="141,195,139,198,93,244,61,284,56,282,89,240,136,194,144,190"/>
@@ -5172,7 +5771,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="138,44,140,46,118,75,100,108,74,177,59,240,53,284,48,283,54,239,69,175,95,106,113,73,136,42,141,40"/>
 <area shape="poly" title=" " alt="" coords="139,95,140,96,105,145,80,199,63,248,54,284,49,283,58,247,75,197,100,142,136,93,141,90"/>
 <area shape="poly" title=" " alt="" coords="409,217,378,214,375,210,413,214"/>
-<area shape="rect" href="_list_of_functions_8h.html#af374341f1c356f4542dab2add5843a07" title=" " alt="" coords="290,107,372,133"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#af374341f1c356f4542dab2add5843a07" title=" " alt="" coords="290,107,372,133"/>
 <area shape="poly" title=" " alt="" coords="421,122,373,122,371,118,426,118"/>
 <area shape="poly" title=" " alt="" coords="354,92,347,88,331,85,316,87,309,92,307,98,311,106,306,106,301,98,305,88,315,82,331,80,349,83,359,91"/>
 <area shape="poly" title=" " alt="" coords="120,313,92,307,89,303,125,309"/>
@@ -5181,7 +5780,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="266,534,236,534,201,529,167,519,136,502,114,481,95,457,69,402,54,350,50,314,50,308,60,349,74,401,100,454,118,478,139,498,169,514,202,524,236,529,271,530"/>
 <area shape="poly" title=" " alt="" coords="410,1190,347,1187,313,1177,283,1161,245,1131,217,1102,196,1072,182,1040,160,969,135,881,111,796,91,709,65,539,51,397,49,314,49,309,57,397,70,538,96,708,116,795,140,879,165,968,187,1038,201,1069,221,1098,248,1127,285,1156,315,1172,348,1182,416,1190"/>
 <area shape="poly" title=" " alt="" coords="429,253,364,224,363,219,434,251"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="146,841,228,868"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="146,841,228,868"/>
 <area shape="poly" title=" " alt="" coords="424,930,357,924,283,908,242,891,210,871,209,866,245,886,285,903,358,919,429,928"/>
 <area shape="poly" title=" " alt="" coords="209,827,202,822,187,820,173,822,165,826,163,832,167,841,162,841,158,833,161,823,171,817,187,815,204,817,214,825"/>
 <area shape="poly" title=" " alt="" coords="417,973,352,958,283,932,236,901,202,871,202,866,239,897,285,927,354,953,422,971"/>
@@ -5234,7 +5833,22 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strncat
+--------------------------------------------------------------------------------
+            ss                           ss                ss = srcstart
+        +---+-------+---+            +---+-------+---+
+src:    | A |   B   | C |            | A |   B   | C |
+        +---+-------+---+            +---+-------+---+
+            +--len--+                    +--len--+
+                            =&gt;
+                                         +--len--+
+        +---+                        +---+-------+
+dst:    | D |                        | D |   B   |
+        +---+                        +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a36e24cf526819321e45aee5d4e20060c_cgraph.png" border="0" usemap="#as__string_8c_a36e24cf526819321e45aee5d4e20060c_cgraph" loading="lazy" alt=""/></div>
@@ -5256,7 +5870,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a36e24cf526819321e45aee5d4e20060c_icgraph.png" border="0" usemap="#as__string_8c_a36e24cf526819321e45aee5d4e20060c_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a36e24cf526819321e45aee5d4e20060c_icgraph" id="as__string_8c_a36e24cf526819321e45aee5d4e20060c_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,211,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,34,10,27,14,25,20,29,29,24,29,20,21,23,11,32,5,47,3,62,5,72,14"/>
 </map>
@@ -5287,7 +5901,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_strncat_c
+--------------------------------------------------------------------------------
+        +-------+---+            +-------+---+
+src:    |   A   | B |            |   A   | B |
+        +-------+---+            +-------+---+
+        +--len--+                +--len--+
+                        =&gt;
+                                     +--len--+
+        +---+                    +---+-------+
+dst:    | C |                    | C |   A   |
+        +---+                    +---+-------+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_ad5cce59fdc26ac29eb3e52d9bb4e7a62_cgraph.png" border="0" usemap="#as__string_8c_ad5cce59fdc26ac29eb3e52d9bb4e7a62_cgraph" loading="lazy" alt=""/></div>
@@ -5306,7 +5934,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ad5cce59fdc26ac29eb3e52d9bb4e7a62_icgraph.png" border="0" usemap="#as__string_8c_ad5cce59fdc26ac29eb3e52d9bb4e7a62_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ad5cce59fdc26ac29eb3e52d9bb4e7a62_icgraph" id="as__string_8c_ad5cce59fdc26ac29eb3e52d9bb4e7a62_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,225,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,46,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,47,3,63,5,73,14"/>
 </map>
@@ -5368,7 +5996,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_adbe6a62daea04c12f6dcc0968c881410_icgraph.png" border="0" usemap="#as__string_8c_adbe6a62daea04c12f6dcc0968c881410_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_adbe6a62daea04c12f6dcc0968c881410_icgraph" id="as__string_8c_adbe6a62daea04c12f6dcc0968c881410_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,499,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,338,113,323,111,310,113,302,117,301,123,304,132,299,131,295,123,298,114,308,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -5383,7 +6011,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -5445,7 +6073,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a3013ad5a09d4aa85b8e1fcedfcdee801_icgraph.png" border="0" usemap="#as__string_8c_a3013ad5a09d4aa85b8e1fcedfcdee801_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a3013ad5a09d4aa85b8e1fcedfcdee801_icgraph" id="as__string_8c_a3013ad5a09d4aa85b8e1fcedfcdee801_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,513,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -5460,7 +6088,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -5502,11 +6130,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="s__string_8c_aad3bce8c8e3db8900bc075f564793e3e_cgraph.png" border="0" usemap="#as__string_8c_aad3bce8c8e3db8900bc075f564793e3e_cgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aad3bce8c8e3db8900bc075f564793e3e_cgraph" id="as__string_8c_aad3bce8c8e3db8900bc075f564793e3e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,766,84,792"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="136,740,226,767"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="136,740,226,767"/>
 <area shape="poly" title=" " alt="" coords="82,770,122,763,119,767,86,774"/>
 <area shape="rect" href="s__string_8c.html#ad8a4667d5b847aae82b80bbe78949c44" title=" " alt="" coords="576,740,643,767"/>
 <area shape="poly" title=" " alt="" coords="44,765,52,656,64,572,83,476,112,374,153,272,178,222,207,175,239,131,276,91,338,39,369,20,401,8,433,3,465,6,497,19,530,43,539,57,548,81,564,152,577,246,588,354,602,571,610,726,604,724,597,572,582,355,572,247,559,153,543,82,535,60,526,46,495,24,464,12,433,8,402,13,371,25,341,43,280,94,244,134,211,178,183,225,158,274,117,375,88,477,69,573,57,657,49,766"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="132,866,230,892"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="132,866,230,892"/>
 <area shape="poly" title=" " alt="" coords="64,790,151,855,147,857,65,796"/>
 <area shape="rect" href="s__string_8c.html#a11dca010d32f6458b0bd2ce8af4f1ab2" title=" " alt="" coords="292,1526,363,1552"/>
 <area shape="poly" title=" " alt="" coords="82,776,120,777,161,785,200,801,217,813,232,828,248,854,259,887,266,925,269,968,268,1064,262,1168,254,1273,252,1370,259,1452,267,1485,280,1512,283,1518,278,1516,276,1515,262,1487,253,1453,246,1370,249,1272,256,1168,263,1064,264,969,260,926,254,888,243,857,228,831,214,817,197,806,159,790,120,783,86,780"/>
@@ -5632,7 +6260,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_aad3bce8c8e3db8900bc075f564793e3e_icgraph.png" border="0" usemap="#as__string_8c_aad3bce8c8e3db8900bc075f564793e3e_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_aad3bce8c8e3db8900bc075f564793e3e_icgraph" id="as__string_8c_aad3bce8c8e3db8900bc075f564793e3e_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,216,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,61,10,47,8,35,10,28,14,26,20,30,29,24,29,21,21,23,11,33,5,48,3,64,5,73,14"/>
 </map>
@@ -5664,9 +6292,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="s__string_8c_a019dd349a2974166ed5a5ff4809e34ef_cgraph.png" border="0" usemap="#as__string_8c_a019dd349a2974166ed5a5ff4809e34ef_cgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a019dd349a2974166ed5a5ff4809e34ef_cgraph" id="as__string_8c_a019dd349a2974166ed5a5ff4809e34ef_cgraph">
 <area shape="rect" title=" " alt="" coords="5,1532,98,1559"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="150,772,240,799"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="150,772,240,799"/>
 <area shape="poly" title=" " alt="" coords="53,1531,186,813,191,814,58,1532"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="146,1607,244,1633"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="146,1607,244,1633"/>
 <area shape="poly" title=" " alt="" coords="79,1556,156,1598,152,1600,78,1562"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="590,1203,675,1229"/>
 <area shape="poly" title=" " alt="" coords="98,1550,189,1557,246,1557,306,1554,369,1544,430,1527,488,1502,540,1467,563,1444,581,1416,608,1355,622,1294,628,1247,631,1243,627,1295,613,1356,586,1419,567,1447,543,1471,491,1507,432,1532,370,1549,307,1559,246,1563,189,1563,98,1555"/>
@@ -5793,7 +6421,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="293,107,385,133"/>
 <area shape="rect" href="s__string_8c.html#a799754db581681229535d434fd59e8fa" title=" " alt="" coords="141,5,242,32"/>
 <area shape="poly" title=" " alt="" coords="306,97,243,53,216,35,216,30,247,48,311,97"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,107,90,133"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,107,90,133"/>
 <area shape="poly" title=" " alt="" coords="279,103,245,97,191,92,138,97,90,109,87,104,137,92,191,87,245,92,284,102"/>
 <area shape="rect" href="s__string_8c.html#aac58867e38c4fc2b9b1a2c238cd3d4cf" title=" " alt="" coords="138,107,245,133"/>
 <area shape="poly" title=" " alt="" coords="275,121,246,123,245,117,280,119"/>
@@ -5865,7 +6493,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a7738cf8f80d088bb3d760c5696f99e90_icgraph.png" border="0" usemap="#as__string_8c_a7738cf8f80d088bb3d760c5696f99e90_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a7738cf8f80d088bb3d760c5696f99e90_icgraph" id="as__string_8c_a7738cf8f80d088bb3d760c5696f99e90_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,502,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,299,131,295,123,298,114,308,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -5880,7 +6508,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -5942,7 +6570,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a6d9959155d351accfd29dfe7c8cee672_icgraph.png" border="0" usemap="#as__string_8c_a6d9959155d351accfd29dfe7c8cee672_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a6d9959155d351accfd29dfe7c8cee672_icgraph" id="as__string_8c_a6d9959155d351accfd29dfe7c8cee672_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,516,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,404,145"/>
 <area shape="poly" title=" " alt="" coords="345,117,338,113,323,111,309,113,302,117,300,123,304,132,298,131,294,123,297,114,307,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -5957,7 +6585,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -6006,7 +6634,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a1ee93b0a23068b6c43eb202cc4ac0adf_icgraph.png" border="0" usemap="#as__string_8c_a1ee93b0a23068b6c43eb202cc4ac0adf_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a1ee93b0a23068b6c43eb202cc4ac0adf_icgraph" id="as__string_8c_a1ee93b0a23068b6c43eb202cc4ac0adf_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,491,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,337,113,323,111,310,113,303,117,301,123,305,132,300,131,296,123,299,114,308,108,323,105,339,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -6021,7 +6649,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -6083,7 +6711,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_af30a3e5cf53a84448d4cac9ac4ba451a_icgraph.png" border="0" usemap="#as__string_8c_af30a3e5cf53a84448d4cac9ac4ba451a_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_af30a3e5cf53a84448d4cac9ac4ba451a_icgraph" id="as__string_8c_af30a3e5cf53a84448d4cac9ac4ba451a_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,211,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,34,10,27,14,25,20,29,29,24,29,20,21,23,11,32,5,47,3,62,5,72,14"/>
 </map>
@@ -6135,7 +6763,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_accfa7c0ff0eeb9c92d9c0c0427ff75ea_icgraph.png" border="0" usemap="#as__string_8c_accfa7c0ff0eeb9c92d9c0c0427ff75ea_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_accfa7c0ff0eeb9c92d9c0c0427ff75ea_icgraph" id="as__string_8c_accfa7c0ff0eeb9c92d9c0c0427ff75ea_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,225,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,46,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,47,3,63,5,73,14"/>
 </map>
@@ -6188,7 +6816,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a0a1a7c89a23a9485bc4077cc08da3c20_icgraph.png" border="0" usemap="#as__string_8c_a0a1a7c89a23a9485bc4077cc08da3c20_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a0a1a7c89a23a9485bc4077cc08da3c20_icgraph" id="as__string_8c_a0a1a7c89a23a9485bc4077cc08da3c20_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,489,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="343,117,337,113,323,111,310,113,303,117,302,123,305,132,300,131,296,123,299,114,308,108,323,105,339,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -6203,7 +6831,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -6260,7 +6888,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a51d428c494990e89ef8a5d3eff08d4e7_icgraph.png" border="0" usemap="#as__string_8c_a51d428c494990e89ef8a5d3eff08d4e7_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a51d428c494990e89ef8a5d3eff08d4e7_icgraph" id="as__string_8c_a51d428c494990e89ef8a5d3eff08d4e7_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,492,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,369,143,404,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,337,113,323,111,310,113,303,117,301,123,305,132,300,131,296,123,299,114,308,108,323,105,339,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -6275,7 +6903,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -6337,7 +6965,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a3c850802257f07a6f8dd30d64d25a2b1_icgraph.png" border="0" usemap="#as__string_8c_a3c850802257f07a6f8dd30d64d25a2b1_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a3c850802257f07a6f8dd30d64d25a2b1_icgraph" id="as__string_8c_a3c850802257f07a6f8dd30d64d25a2b1_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,207,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,34,10,27,14,26,20,29,29,24,29,20,21,23,11,32,5,47,3,62,5,71,14"/>
 </map>
@@ -6389,7 +7017,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a9481b038b359af38f08fe9978e30bcbd_icgraph.png" border="0" usemap="#as__string_8c_a9481b038b359af38f08fe9978e30bcbd_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a9481b038b359af38f08fe9978e30bcbd_icgraph" id="as__string_8c_a9481b038b359af38f08fe9978e30bcbd_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,221,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,46,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,47,3,63,5,72,14"/>
 </map>
@@ -6446,7 +7074,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a6cd75657a167437978f76c59e269f3ce_icgraph.png" border="0" usemap="#as__string_8c_a6cd75657a167437978f76c59e269f3ce_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a6cd75657a167437978f76c59e269f3ce_icgraph" id="as__string_8c_a6cd75657a167437978f76c59e269f3ce_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,482,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="343,117,337,113,323,111,311,113,304,117,302,123,306,132,301,131,297,123,300,114,309,108,323,105,339,108,348,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -6461,7 +7089,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -6518,7 +7146,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a313403541104743216c8a7bf214ec579_icgraph.png" border="0" usemap="#as__string_8c_a313403541104743216c8a7bf214ec579_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a313403541104743216c8a7bf214ec579_icgraph" id="as__string_8c_a313403541104743216c8a7bf214ec579_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,496,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,337,113,323,111,310,113,303,117,301,123,305,132,300,131,296,123,298,114,308,108,323,105,340,108,349,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -6533,7 +7161,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>
@@ -6601,7 +7229,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a13e211471875c1a6a2a19b5634484b72_icgraph.png" border="0" usemap="#as__string_8c_a13e211471875c1a6a2a19b5634484b72_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a13e211471875c1a6a2a19b5634484b72_icgraph" id="as__string_8c_a13e211471875c1a6a2a19b5634484b72_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,204,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="66,14,60,10,46,8,34,10,28,14,26,20,30,29,24,29,21,20,23,11,32,5,47,3,62,5,71,14"/>
 </map>
@@ -6659,7 +7287,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a163e61f013ff4fe679b1c4936120fad5_icgraph.png" border="0" usemap="#as__string_8c_a163e61f013ff4fe679b1c4936120fad5_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a163e61f013ff4fe679b1c4936120fad5_icgraph" id="as__string_8c_a163e61f013ff4fe679b1c4936120fad5_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,218,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,60,10,46,8,33,10,26,14,25,20,28,29,23,29,19,21,22,11,32,5,47,3,63,5,72,14"/>
 </map>
@@ -6711,9 +7339,9 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="648,884,670,866,697,831,719,792,750,727,753,722,724,795,701,834,674,869,651,887"/>
 <area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="853,75,946,102"/>
 <area shape="poly" title=" " alt="" coords="765,682,890,119,893,115,770,684"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="280,785,370,811"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="280,785,370,811"/>
 <area shape="poly" title=" " alt="" coords="188,1150,312,829,314,824,193,1152"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="276,1163,374,1190"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="276,1163,374,1190"/>
 <area shape="poly" title=" " alt="" coords="227,1166,263,1170,258,1173,230,1171"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="720,1165,805,1191"/>
 <area shape="poly" title=" " alt="" coords="188,1176,210,1254,228,1308,252,1368,283,1429,322,1488,368,1540,395,1562,424,1581,459,1599,492,1611,523,1616,553,1615,582,1608,611,1595,641,1575,670,1550,687,1525,703,1487,728,1390,746,1287,757,1209,760,1205,751,1287,733,1391,708,1489,692,1527,674,1553,644,1580,614,1600,584,1613,554,1620,522,1621,490,1616,456,1604,421,1586,392,1566,365,1543,317,1491,278,1432,247,1370,223,1310,205,1256,187,1181"/>
@@ -6833,7 +7461,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_af6e5ff03a8b5abc0f96670d261279496_icgraph.png" border="0" usemap="#as__string_8c_af6e5ff03a8b5abc0f96670d261279496_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_af6e5ff03a8b5abc0f96670d261279496_icgraph" id="as__string_8c_af6e5ff03a8b5abc0f96670d261279496_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,222,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,46,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,47,3,63,5,73,14"/>
 </map>
@@ -6880,9 +7508,9 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="655,883,677,866,704,831,726,792,757,727,760,722,731,795,708,834,681,869,658,887"/>
 <area shape="rect" href="s__string_8c.html#a7c00fdfc8f5e5f966ea79f37531f1e27" title=" " alt="" coords="860,75,953,102"/>
 <area shape="poly" title=" " alt="" coords="772,682,897,119,900,115,777,684"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="287,785,377,811"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="287,785,377,811"/>
 <area shape="poly" title=" " alt="" coords="195,1150,319,829,321,824,200,1152"/>
-<area shape="rect" href="_list_of_functions_8h.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="283,1163,381,1190"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a2fcebf38007b0529e6f065e2a99a74ab" title=" " alt="" coords="283,1163,381,1190"/>
 <area shape="poly" title=" " alt="" coords="235,1166,270,1170,265,1173,237,1171"/>
 <area shape="rect" href="s__string_8c.html#ad6674b3b7d5474402da49e3c160cf7e1" title=" " alt="" coords="727,1165,812,1191"/>
 <area shape="poly" title=" " alt="" coords="195,1176,217,1254,235,1308,259,1368,290,1429,329,1488,375,1540,402,1562,431,1581,466,1599,499,1611,530,1616,560,1615,589,1608,618,1595,648,1575,677,1550,694,1525,710,1487,735,1390,753,1287,764,1209,767,1205,758,1287,740,1391,715,1489,699,1527,681,1553,651,1580,621,1600,591,1613,561,1620,529,1621,497,1616,463,1604,428,1586,399,1566,372,1543,324,1491,285,1432,254,1370,230,1310,212,1256,194,1181"/>
@@ -7002,7 +7630,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_ab2e911d5e0c85efdfe520b92bcf1d677_icgraph.png" border="0" usemap="#as__string_8c_ab2e911d5e0c85efdfe520b92bcf1d677_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_ab2e911d5e0c85efdfe520b92bcf1d677_icgraph" id="as__string_8c_ab2e911d5e0c85efdfe520b92bcf1d677_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,229,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,61,10,46,8,33,10,26,14,24,20,28,29,22,29,18,21,21,11,31,5,47,3,63,5,73,14"/>
 </map>
@@ -7068,7 +7696,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a27f0461a7620264ea6bb9b86b7f96dcb_icgraph.png" border="0" usemap="#as__string_8c_a27f0461a7620264ea6bb9b86b7f96dcb_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a27f0461a7620264ea6bb9b86b7f96dcb_icgraph" id="as__string_8c_a27f0461a7620264ea6bb9b86b7f96dcb_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,218,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="117,43,88,45,88,40,122,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,60,10,46,8,33,10,26,14,25,20,28,29,23,29,19,21,22,11,32,5,47,3,63,5,72,14"/>
 </map>
@@ -7129,7 +7757,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a76a7484d5b9db7e0d8796325dfd04221_icgraph.png" border="0" usemap="#as__string_8c_a76a7484d5b9db7e0d8796325dfd04221_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a76a7484d5b9db7e0d8796325dfd04221_icgraph" id="as__string_8c_a76a7484d5b9db7e0d8796325dfd04221_icgraph">
 <area shape="rect" title=" " alt="" coords="136,29,225,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a9fd80e792edfa785be6096e7190bbfc8" title=" " alt="" coords="5,29,88,56"/>
 <area shape="poly" title=" " alt="" coords="118,43,88,45,88,40,123,42"/>
 <area shape="poly" title=" " alt="" coords="67,14,61,10,46,8,33,10,26,14,24,20,28,29,23,29,19,21,22,11,31,5,47,3,63,5,73,14"/>
 </map>
@@ -7178,7 +7806,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a67847b98e9095b168c69822a320fc713_icgraph.png" border="0" usemap="#as__string_8c_a67847b98e9095b168c69822a320fc713_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a67847b98e9095b168c69822a320fc713_icgraph" id="as__string_8c_a67847b98e9095b168c69822a320fc713_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,220,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,124,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,62,10,47,8,34,10,27,14,26,20,29,29,24,29,20,21,23,11,32,5,48,3,64,5,73,14"/>
 </map>
@@ -7227,7 +7855,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a97870e6cb28c96abeabf7441a69c0e07_icgraph.png" border="0" usemap="#as__string_8c_a97870e6cb28c96abeabf7441a69c0e07_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a97870e6cb28c96abeabf7441a69c0e07_icgraph" id="as__string_8c_a97870e6cb28c96abeabf7441a69c0e07_icgraph">
 <area shape="rect" title=" " alt="" coords="138,29,216,56"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,29,90,56"/>
 <area shape="poly" title=" " alt="" coords="119,43,90,45,90,40,125,42"/>
 <area shape="poly" title=" " alt="" coords="68,14,61,10,47,8,35,10,28,14,26,20,30,29,24,29,21,21,23,11,33,5,48,3,64,5,73,14"/>
 </map>
@@ -7253,7 +7881,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre>
+s_truncate
+--------------------------------------------------------------------------------
+            ln                   ln               ln = len
+        +---+---+            +---+
+str:    | A | B |        =&gt;  | A |
+        +---+---+            +---+
+
+--------------------------------------------------------------------------------
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="s__string_8c_a42dfa782745a4d69055390d96b97b7ac_cgraph.png" border="0" usemap="#as__string_8c_a42dfa782745a4d69055390d96b97b7ac_cgraph" loading="lazy" alt=""/></div>
@@ -7271,7 +7908,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="s__string_8c_a42dfa782745a4d69055390d96b97b7ac_icgraph.png" border="0" usemap="#as__string_8c_a42dfa782745a4d69055390d96b97b7ac_icgraph" loading="lazy" alt=""/></div>
 <map name="as__string_8c_a42dfa782745a4d69055390d96b97b7ac_icgraph" id="as__string_8c_a42dfa782745a4d69055390d96b97b7ac_icgraph">
 <area shape="rect" title=" " alt="" coords="416,132,499,159"/>
-<area shape="rect" href="_list_of_functions_8h.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a736cd54729381f541f72a4e30ae8de07" title=" " alt="" coords="278,132,368,159"/>
 <area shape="poly" title=" " alt="" coords="398,146,369,148,368,143,403,145"/>
 <area shape="poly" title=" " alt="" coords="344,117,338,113,323,111,310,113,302,117,301,123,304,132,299,131,295,123,298,114,308,108,323,105,340,108,350,117"/>
 <area shape="rect" href="s__string_8c.html#a972f2ed70daef6f4908c800d38b86236" title=" " alt="" coords="148,5,220,32"/>
@@ -7286,7 +7923,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="286,166,211,210,209,205,281,168"/>
 <area shape="rect" href="s__string_8c.html#a019dd349a2974166ed5a5ff4809e34ef" title=" " alt="" coords="138,259,230,285"/>
 <area shape="poly" title=" " alt="" coords="305,169,272,210,232,249,214,261,212,256,228,245,268,207,300,172"/>
-<area shape="rect" href="_list_of_functions_8h.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
+<area shape="rect" href="_list_of_functions_8h_8txt.html#a10552285bd281ac238795b9ee77ea811" title=" " alt="" coords="5,132,90,159"/>
 <area shape="poly" title=" " alt="" coords="140,43,139,46,93,92,61,133,56,130,89,88,136,42,144,39"/>
 <area shape="poly" title=" " alt="" coords="69,118,62,113,47,111,34,113,26,117,25,123,28,131,23,132,19,123,22,114,32,108,48,105,64,108,74,116"/>
 <area shape="poly" title=" " alt="" coords="143,93,139,97,75,134,71,129,136,92,147,89"/>

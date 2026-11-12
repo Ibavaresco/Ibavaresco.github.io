@@ -64,6 +64,8 @@ var s__string_8h =
     [ "s_isreadonly", "s__string_8h.html#a93a7e966f6a600af0f88b7a92da8d3bd", null ],
     [ "s_ltrim_c", "s__string_8h.html#af71a829cd1c65e705fe300744fcd4ab4", null ],
     [ "s_ltrim_s", "s__string_8h.html#abe64ec81510940dd1714e049b46f6b12", null ],
+    [ "s_remove_ce", "s__string_8h.html#a3ae449da69dd9b02414c270af55a0f5c", null ],
+    [ "s_remove_se", "s__string_8h.html#a3020a24718fb5faa58b454255c57eeb3", null ],
     [ "s_replace_de", "s__string_8h.html#a3fe1675e4627cfcef8c92ff5babd8012", null ],
     [ "s_replace_ec", "s__string_8h.html#ab77110c2e86901bb7b8f5650e126e907", null ],
     [ "s_replace_l", "s__string_8h.html#ae532c0c345bbde54717565eb35780ddd", null ],
